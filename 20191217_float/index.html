@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <style>
+        div.wrap{width: 500px;background-color: skyblue;}
+        div.left,
+        div.right{width: 135px;height: 200px;float: left; _display: inline-block}
+        div.left{background-color: pink;}
+        div.right{background-color: blue;_margin-left: -6px}
+       /* div.clear{clear: both}
+        div.visual:after{content: "안녕하세요";display: block;}
+        div.visual:before{content: "한성용님";display: block;}*/
+        div.wrap:after{content:"" /*"float clear"*/; display: block;clear: both}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="left">view01</div>
+    <div class="right">view02</div>
+   <!-- <div class="clear">float clear</div>-->
+</div>  
+<div class="visual">
+Lorem ipsum dolor sit amet.</div>  
+</body>
+</html>
