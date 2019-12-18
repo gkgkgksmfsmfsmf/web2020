@@ -7,11 +7,12 @@
 	*{margin: 0;padding: 0;}
 	li{list-style: none;}
 	a:visited,a:link{text-decoration: none;color: #000;}
+	.clearfix:after{content: "";display: block;clear: both;}
     /*header start*/
 	div#header{width: 1000px;margin: 0 auto;}
 	div#header>h1{/*width: 100px;*/margin: 0 auto;text-align: center;padding-bottom:20px;padding-top: 20px;}
 	div#header>ul>li{float: left;/* text-align: center; */width:  166.66px;height: 40px; background-color:  skyblue; }	
-	div#header>ul.gnb:after{content: ""; clear: both;display: block;}
+	/* div#header>ul.gnb:after{content: ""; clear: both;display: block;} */
 	div#header>ul>li>a:hover{color:white;background-color: pink;}
 	div#header>ul>li>a{display: block;	text-align:center;line-height: 40px;font-weight: bold;}
 	/* header end */
@@ -19,7 +20,7 @@
 	div.container>ul>li{float: left;width:/* (1000-30/4) */ 242.5px;margin-right: 10px;}
 	div.container>ul>li>img{width: 100%;display: block;}
 	div.container{width: 1000px;margin: 0 auto;margin-bottom: 20px;	}
-	div.container>ul:after{content: "";display: block;	clear: both;}
+	/* div.container>ul:after{content: "";display: block;	clear: both;} */
 	div.container>ul>li:last-child{margin-right: 0;}
 
 
@@ -36,7 +37,7 @@
 	<div id="header">
 		<h1>LOGO</h1>
 		
-			<ul class="gnb">
+			<ul class="gnb clearfix">
 				<li><a href="#">menu1</a></li>
 				<li><a href="#">menu2</a></li>
 				<li><a href="#">menu3</a></li>
@@ -49,7 +50,7 @@
 	<div class="visual"></div>
 	<div class="container">
 		
-		<ul>
+		<ul class="clearfix">
 			<li><img src="../images/testimg.jpg" alt=""></li>
 			<li><img src="../images/testimg.jpg" alt=""></li>
 			<li><img src="../images/testimg.jpg" alt=""></li>
