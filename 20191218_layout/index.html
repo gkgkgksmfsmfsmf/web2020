@@ -7,28 +7,34 @@
 	*{margin: 0;padding: 0;}
 	li{list-style: none;}
 	a:visited,a:link{text-decoration: none;color: #000;}
-
+    /*header start*/
 	div#header{width: 1000px;margin: 0 auto;}
-	div#header>h1{margin: 0 auto;text-align: center;padding-bottom:10px;padding-top: 10px;}
-	div#header>ul>li{float: left;text-align: center;width:  16.66%;height: 40px; background-color:skyblue;
-		             margin-bottom: 10px;}	
+	div#header>h1{/*width: 100px;*/margin: 0 auto;text-align: center;padding-bottom:20px;padding-top: 20px;}
+	div#header>ul>li{float: left;/* text-align: center; */width:  166.66px;height: 40px; background-color:  skyblue; }	
 	div#header>ul.gnb:after{content: ""; clear: both;display: block;}
 	div#header>ul>li>a:hover{color:white;background-color: pink;}
-	div#header>ul>li>a{display: block;	text-align:center;line-height: 40px}
+	div#header>ul>li>a{display: block;	text-align:center;line-height: 40px;font-weight: bold;}
+	/* header end */
 
-	div.container>ul>li{float: left;width: 242.5px;margin-right: 7px;}
-	div.container>ul>li>img{width: 100%;}
-	div.container{width: 1000px;margin: 0 auto;	}
+	div.container>ul>li{float: left;width:/* (1000-30/4) */ 242.5px;margin-right: 10px;}
+	div.container>ul>li>img{width: 100%;display: block;}
+	div.container{width: 1000px;margin: 0 auto;margin-bottom: 20px;	}
 	div.container>ul:after{content: "";display: block;	clear: both;}
-	div.visual{width: 1000px;	height: 200px;	background-color: pink; margin: 0 auto;margin-bottom: 	20px;	}
+	div.container>ul>li:last-child{margin-right: 0;}
+
+
+	div.visual{	height: 400px;	background-color: pink; margin: 0 auto;margin-bottom: 	20px;	}
+	div#footer{height: 100px;background-color: #000;}
+
 
 
 
 	</style>
 </head>
 <body>
+	<!-- header start -->
 	<div id="header">
-		<h1>logo</h1>
+		<h1>LOGO</h1>
 		
 			<ul class="gnb">
 				<li><a href="#">menu1</a></li>
@@ -39,9 +45,10 @@
 				<li><a href="#">menu6</a></li>
 			</ul>
 	</div>
-
+<!-- 	header end-->
 	<div class="visual"></div>
 	<div class="container">
+		
 		<ul>
 			<li><img src="../images/testimg.jpg" alt=""></li>
 			<li><img src="../images/testimg.jpg" alt=""></li>
@@ -50,7 +57,7 @@
 		
 		</ul>
 	</div>
-		
+	<div id="footer"></div>	
 	
 	
 </body>
