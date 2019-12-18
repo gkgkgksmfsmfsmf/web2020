@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>layout</title>
+	<style>
+	*{margin: 0;padding: 0;}
+	li{list-style: none;}
+	a:visited,a:link{text-decoration: none;color: #000;}
+
+	div#header{width: 1000px;margin: 0 auto;}
+	div#header>h1{margin: 0 auto;text-align: center;padding-bottom:10px;padding-top: 10px;}
+	div#header>ul>li{float: left;text-align: center;width:  16.66%;height: 40px; background-color:skyblue;
+		             margin-bottom: 10px;}	
+	div#header>ul.gnb:after{content: ""; clear: both;display: block;}
+	div#header>ul>li>a:hover{color:white;background-color: pink;}
+	div#header>ul>li>a{display: block;	text-align:center;line-height: 40px}
+
+	div.container>ul>li{float: left;width: 242.5px;margin-right: 7px;}
+	div.container>ul>li>img{width: 100%;}
+	div.container{width: 1000px;margin: 0 auto;	}
+	div.container>ul:after{content: "";display: block;	clear: both;}
+	div.visual{width: 1000px;	height: 200px;	background-color: pink; margin: 0 auto;margin-bottom: 	20px;	}
+
+
+
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>logo</h1>
+		
+			<ul class="gnb">
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+				<li><a href="#">menu6</a></li>
+			</ul>
+	</div>
+
+	<div class="visual"></div>
+	<div class="container">
+		<ul>
+			<li><img src="../images/testimg.jpg" alt=""></li>
+			<li><img src="../images/testimg.jpg" alt=""></li>
+			<li><img src="../images/testimg.jpg" alt=""></li>
+			<li><img src="../images/testimg.jpg" alt=""></li>
+		
+		</ul>
+	</div>
+		
+	
+	
+</body>
+</html>
