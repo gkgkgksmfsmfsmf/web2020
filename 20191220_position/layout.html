@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>layout</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+
+		div#header{width: 1000px;height: 100px;background-color: skyblue; margin: 0 auto;position: relative;}
+		div#header>h1{width: 100px;position: absolute;left: 50%;margin-left: -50px; background-color: #f00;text-align: center;top: 10px;}
+
+		div#header>div.utilMenu1{width: 200px;height: 40px;background-color: #00f;position: absolute;left: 10px;top: 10px;}
+		div#header>div.utilMenu2{width: 200px;height: 40px;background-color: #00f;position: absolute;right: 10px;top: 10px;}
+
+		div#header>nav.navWrap{background-color: #ff0;position: absolute;bottom: 0;width: 100%;}
+		div#header>nav.navWrap>ul{}
+		div#header>nav.navWrap>ul>li{float: left;width: 200px;/* border: 1px solid #000;padding: 0 10px; */box-sizing:border-box; border-right:  1px solid #000;}
+		/* div#header>nav.navWrap>ul>li:last-child{border-right: none;} */
+		div#header>nav.navWrap>ul>li:first-child{border-left:1px solid #000;}
+		div#header>nav.navWrap>ul>li>a{display: block;text-align: center;line-height: 40px;}
+		
+
+	</style>
+</head>
+
+<body>
+	<div id="header">
+		<h1>LOGO</h1>
+		<div class="utilMenu1">utilmenu1</div>
+		<div class="utilMenu2">utilmenu2</div>
+		<nav class="navWrap">
+			<ul class="clearfix">
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+			</ul>
+		</nav>
+	</div>
+</body>
+</html>
