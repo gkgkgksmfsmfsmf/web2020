@@ -57,7 +57,7 @@ article#container2 li:last-child{margin-right: 0;}
 article#container2 li div.card{padding: 15px;border: 1px solid #ccc;position: relative;height: 150px;}
 article#container2 li img{display: block;position: absolute;right: 0;}
  */
-article#containerOne{width: 980px;margin: 0 auto;}
+article#containerOne{width: 980px;margin: 0 auto;margin-bottom: 10px;}
 article#containerOne li{float:left;width: 309px;margin-right: 26.5px;border: 1px solid #ccc;position: relative;overflow: hidden;}
 article#containerOne li:last-child{margin-right: 0;}
 article#containerOne li div.card_body{padding: 15px;position: relative;width: 180px;}
@@ -67,17 +67,25 @@ article#containerOne div.card_body p{margin-bottom: 10px;}
 article#containerOne div.card_body a{color: #4c8ddd;font-size: 0.8em;}
 
 
-footer#main_footer{height: 150px;background-color: #5e5e5e;}
-footer#main_footer>div.footerWrap{height: 43px;background-color: #4d4d4d;}
-footer#main_footer>div.footerWrap>div.footer{width: 980px;margin: 0 auto;}
-footer#main_footer>div.footerWrap>div.footerAdd{width: 980px;margin: 0 auto;}
-
+footer#main_footer{height:150px;background-color: #5e5e5e;}
+footer#main_footer > div.footerWrap{height: 43px;background-color: #4d4d4d;}
+footer#main_footer > div.footerWrap > div.footer{width: 980px;margin: 0 auto}
 footer#main_footer div.footer ul li{float: left;position: relative;}
-footer#main_footer div.footer ul li a{display: block;padding: 0 30px; font-size: 0.8em;line-height: 43px; color:#cdcdcd;font-weight: bold;position: absolute;}
+footer#main_footer div.footer ul li a{
+	display: block;padding:0 30px;font-size:0.8em;line-height:43px;
+	color:#cdcdcd;font-weight:bold;
+}
+footer#main_footer div.footer ul{overflow: hidden;}
+footer#main_footer div.footer ul li:first-child a{padding-left:0;}
 
-footer#main_footer div.footer ul li:first-child a{padding-left: 0;}
-footer#main_footer div.footer ul li:after{content:"";width: 1px;height: 15px;background-color: #717171;display: block;}
+footer#main_footer div.footer ul li:after{
+	content:"";width: 1px;height: 15px;background-color: #717171;
+	display: block;position: absolute;top:15px;left:-1px;
+}
 
+footer#main_footer > div.footerAdd{width: 980px;margin: 0 auto;}
+footer#main_footer > div.footerAdd h2{float: left;color:white;padding-top:10px;margin-right:30px;}
+footer#main_footer > div.footerAdd address{float: left;font-style:normal;color:#cdcdcd;padding-top:10px;}
 
 
 
