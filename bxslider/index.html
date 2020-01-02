@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>bxslider</title>
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+		.sliderWrap{width: 900px;margin: 0 auto;position: relative;}
+		.bx-wrapper {
+		    -moz-box-shadow:0 none;
+		    -webkit-box-shadow: 0 none;
+		    box-shadow: 0 none;
+		    border: 0 none;
+			margin-bottom: 0;}
+		.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+		    position: absolute;
+		    bottom: 30px;
+		    width: 100%;
+		}
+		.nextBtn,.prevBtn{position:absolute;top: 50%;margin-top: -50px;cursor: pointer;}
+		.nextBtn{right: 0;}
+
+		.wrapper{width: 900px;margin: 0 auto;position: relative;}	
+		.slider_pager{position: absolute;width: 900px;}
+		.slider_pager a{display: block;width: 25%;float:left;text-align: center;line-height: 40px;background-color: skyblue;margin: 0 auto;}
+		.slider_pager a.active{background-color: darkblue;color: white}
+
+		
+	</style>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			
+			var mySlide=$(".slider").bxSlider({
+			auto:false,
+			controls:false,
+			pager:true,
+			pagerCustom:".bx-pager"
+		});
+		$(".nextBtn").click(function(){
+          mySlide.goToNextSlide();
+		});
+
+		$(".prevBtn").click(function(){
+			mySlide.goToPrevSlide();
+		});
+
+		$(".sliderOne").bxSlider();
+
+	   });
+		/*function dLink(){location.href="http://www.naver.com";};*/
+
+
+	</script>
+</head>
+<body>
+	<div class="sliderWrap">
+		<ul class="slider">
+			<li><img src="images/pc01.jpg" alt="img01"></li>
+			<li><img src="images/pc02.jpg" alt="img02"></li>
+			<li><img src="images/pc03.jpg" alt="img03"></li>
+			<li><img src="images/pc03.jpg" alt="img03"></li>
+		</ul>
+		<div class="nextBtn">
+			<img src="images/btn_right.png" alt="다음">
+		</div>
+
+		<div class="prevBtn">
+			<img src="images/btn_left.png" alt="이전">
+		</div>
+
+	</div>
+
+	<div class="wrapper">
+		<div class="slider_pager">
+			<div class="bx-pager clearfix">
+				<a href="#"data-slide-index="0">menu1</a>
+				<a href="#"data-slide-index="1">menu2</a>
+				<a href="#"data-slide-index="2">menu3</a>
+				<a href="#"data-slide-index="3">menu4</a>
+				
+			</div>
+	</div>
+	</div>
+	
+	<!-- <div style="height: 200px;background:#f00;"onclick="dLink();"></div> -->
+
+
+	    <!-- <ul class="sliderOne">
+	    			<li><img src="images/pc01.jpg" alt="img01"></li>
+	    			<li><img src="images/pc02.jpg" alt="img02"></li>
+	    			<li><img src="images/pc03.jpg" alt="img03"></li>
+	    		</ul> -->
+</body>
+</html>
