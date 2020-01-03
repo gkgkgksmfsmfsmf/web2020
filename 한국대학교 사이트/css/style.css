@@ -1,9 +1,10 @@
-#main_header{width: 100%;height: 39px;background-color: #0044af;}
-#main_header>div.main_util{width: 1200px;margin: 0 auto;}
-#main_header>div.main_util>nav.util_menu_left{width: 400px;}
-#main_header>div.main_util>nav.util_menu_left>ul{}
-#main_header>div.main_util>nav.util_menu_left>ul>li{float:left;}
-#main_header>div.main_util>nav.util_menu_left>ul>li>a{
+#main_header{_width: 100%;_height: 39px;}
+#main_header div.main_utilWrap{background-color: #0044af;}
+#main_header div.main_util{width: 1200px;margin: 0 auto;}
+#main_header div.main_util>nav.util_menu_left{float:left;}
+#main_header div.main_util>nav.util_menu_left>ul{}
+#main_header div.main_util>nav.util_menu_left>ul>li{float:left;}
+#main_header div.main_util>nav.util_menu_left>ul>li>a{
 												display: block;
 												width: 120px;
 												height: 39px;
@@ -14,16 +15,87 @@
 												margin-right: 2px;
 												font-weight: bold;}
 
-#main_header>div.main_util>nav.util_menu_left>ul>li>a:hover{color:#6b6b6b;background-color:white;}
+#main_header div.main_util>nav.util_menu_left>ul>li>a:hover{color:#6b6b6b;background-color:white;}
 
-#main_header>div.main_util>nav.util_menu_right>ul{}
-#main_header>div.main_util>nav.util_menu_right>ul>li{float:right;}
-#main_header>div.main_util>nav.util_menu_right>ul>li>a{
+#main_header div.main_util>nav.util_menu_right{float:right;}
+#main_header div.main_util>nav.util_menu_right>ul>li>div{
+														width: 20px;
+														height: 20px;
+														background-color:white;
+														color:#9b9b9b;
+														text-align: center;
+														line-height:17px;
+														
+														}
+#main_header div.main_util>nav.util_menu_right>ul>li>div.minus{}
+#main_header div.main_util>nav.util_menu_right>ul>li:nth-child(1){padding-right:5px;}
+#main_header div.main_util>nav.util_menu_right>ul>li:nth-child(2),
+#main_header div.main_util>nav.util_menu_right>ul>li:nth-child(3)
+{padding-top:10px;padding-left:5px;}
+#main_header div.main_util>nav.util_menu_right>ul{}
+#main_header div.main_util>nav.util_menu_right>ul>li{float:left;}
+#main_header div.main_util>nav.util_menu_right>ul>li>a{
 														display: block;
 														_width: 52px;
-														_line-height: 39px;
-														color:red;
+														line-height: 39px;
+														color:white;
 														text-align: center;
 														margin-left: 10px;
 
 														}
+/* nav.util_menu_right>div.puls{background-color:white;width: 16px;height: 16px;}
+nav.util_menu_right>div.puls a{color:white;} */
+
+div.main_middle{width: 1200px;height: 110px;_background-color: pink;margin: 0 auto;}
+div.main_middle>nav.middle_left{float:left;margin-top: 12px;}
+div.main_middle>nav.middle_right{float:right;}
+
+
+div.main_middle>nav.middle_right>div.left>ul>li{float:left;padding-right: 47px;line-height: 110px}
+div.main_middle>nav.middle_right>div.left>ul>li a{color: #474747;font-weight: bold;}
+
+div.main_middle>nav.middle_right>div.left{float: left;}
+div.main_middle>nav.middle_right>div.right{float:right;}
+div.main_middle>nav.middle_right>div.right>img{float:left;padding-top: 34px;}
+
+div.container{height: 1310px;}
+div.container{background-image: url(../images/bg_dot.gif),url(../images/main_bg.jpg); 
+		   background-repeat: repeat,no-repeat;background-position:center;
+		   background-size: auto,cover;}
+div.container>div.visualWrap{width: 1200px;_height: 1310px;margin: 0 auto;_background-color:skyblue;padding-top: 70px;}
+
+div.container>div.visualWrap div.text>h3{font-size: 30px;color:white;}
+div.container>div.visualWrap div.text>h3>span{font-size: 55px;color:white;}
+
+div.text{float:left;}
+div.icon{float: right;padding: 0 10px;margin: 0 auto;}
+div.icon>ul>li{
+				float:left;
+				border: 3px solid white;
+				width: 80px;
+				height: 80px;
+				border-radius: 40px;
+				margin-left:25px ;
+				
+				}
+
+div.icon>ul>li p{color:white;font-size: 12px;text-align: center;}
+
+div.container ul.visual{padding-top: 30px;}
+div.container ul.visual>li{width: 25%;_height: 450px;float:left;}
+div.container ul.visual>li:nth-child(1){qwidth: 75%;height: 450px;}
+
+ul.visual ul.slider h2{color:#1452b9}
+ul.visual ul.slider a{display: block;background-color: #182d4c;color:white;}
+
+
+
+.bx-wrapper {
+	    -moz-box-shadow:0 none;
+	    -webkit-box-shadow: 0 none;
+	    box-shadow:0 none;
+	    border:  0 none;
+	    background: 0 none;
+	    margin-bottom: 0;}
+.slider_pager{position: absolute;bottom: 20px;width: 100%}	    
+    			

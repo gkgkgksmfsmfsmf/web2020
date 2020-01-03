@@ -3,33 +3,147 @@
 <head>
 	<meta charset="UTF-8">
 	<title>한국대학교</title>
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">  
+	<script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		$(".slider").bxSlider();
+    	});
+    </script> 
 </head>
 <body>
 	<div id="main_header">
-		<div class="main_util">
-			<nav class="util_menu_left">
-				<ul class="clearfix">
-					<li><a href="#">대학교</a></li>
-					<li><a href="#">입학안내</a></li>
-					<li><a href="#">대학원</a></li>
-				</ul>
-			</nav>
-			<nav class="util_menu_right">
-				<ul class="clearfix">
-					<li><a href="#">글자크기</a></li>
-					<li><a href="#">+</a></li>
-					<li><a href="#">-</a></li>
-					<li><a href="#">찾아오시는길</a></li>
-					<li><a href="#">ENGLISH</a></li>
-					<li><a href="#">사이트맵</a></li>
-				</ul>
-			</nav>
+		<div class="main_utilWrap">
+			<div class="main_util clearfix">
+				<nav class="util_menu_left">
+					<ul class="clearfix">
+						<li><a href="#">대학교</a></li>
+						<li><a href="#">입학안내</a></li>
+						<li><a href="#">대학원</a></li>
+					</ul>
+				</nav>
+				<nav class="util_menu_right">
+					<ul class="clearfix">
+						<li><a href="#">글자크기</a></li>
+						<li><div class="plus">+</div></li>
+						<li><div class="minus">-</div></li>
+						<li><a href="#">찾아오시는길</a></li>
+						<li><a href="#">ENGLISH</a></li>
+						<li><a href="#">사이트맵</a></li>
+					</ul>
+				</nav>
+			
+			</div>
 		</div>
 
-		
+		<div class="main_middle clearfix">
+			<nav class="middle_left">
+				<img src="images/한국대학교-로고.jpg" alt="로고">
+			</nav>
+
+			<nav class="middle_right">
+				<div class="left">
+					<ul class="clearfix">
+						<li><a href="#">대학소개</a></li>
+						<li><a href="#">학과소개</a></li>
+						<li><a href="#">학사안내</a></li>
+						<li><a href="#">대학생활</a></li>
+						<li><a href="#">학생지원센터</a></li>
+					</ul>
+				</div>
+				<div class="right clearfix">
+					<img src="images/icon.png" alt="icon">
+				</div>
+			</nav>
+			
+		</div>
+
 	</div>
+
+	<div class="container">
+		<div class="visualWrap">
+			<div class="wrap clearfix">
+				<div class="text">
+					<h3>함께 나누며 세상을 이끌어<br><span>세계로 향하는 한국대학교</span></h3>
+				</div>
+				
+						
+				<div class="icon">
+					<ul class="clearfix">
+						<li>
+							<a href=""><img src="images/icon_01.png" alt=""></a>
+							<p>입학절차안내</p>
+						</li>
+						<li>
+							<a href=""><img src="images/icon_02.png" alt=""></a>
+							<p>입학설명회</p>
+						</li>
+						<li>
+							<a href=""><img src="images/icon_03.png" alt=""></a>
+							<p>장학제도</p>
+						</li>
+						<li>
+							<a href=""><img src="images/icon_04.png" alt=""></a>
+							<p>증명서발급</p>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+		<ul class="visual">
+			<li>
+				<ul class="slider">
+					<li>
+						<img src="images/bg_01.png" alt="">
+						<div class="textWrap">
+							<h2>
+								<span>한국</span>에서<br><span>시작</span>하는<br>새로운<span>꿈</span>
+							</h2>
+							<a href="#">자세히보기</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/bg_01.png" alt="">
+						<div class="textWrap">
+							<h2>
+								<span>한국</span>에서<br><span>시작</span>하는<br>새로운<span>꿈</span>
+							</h2>
+							<a href="#">자세히보기</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/bg_01.png" alt="">
+						<div class="textWrap">
+							<h2>
+								<span>한국</span>에서<br><span>시작</span>하는<br>새로운<span>꿈</span>
+							</h2>
+							<a href="#">자세히보기</a>
+						</div>
+					</li>
+					
+				</ul>
+				
+			</li>
+			<li>
+				<ul>
+					<li><img src="images/bg_02.png" alt=""></li>
+				</ul>
+			</li>
+
+			<li></li>
+		</ul>
+
+
+		</div>
+	</div>
+
+		
+
+
 	
 </body>
 </html>
