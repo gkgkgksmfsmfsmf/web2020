@@ -10,9 +10,47 @@
     <script src="js/jquery.bxslider.js"></script>
     <script>
     	$(document).ready(function(){
-    		$(".slider").bxSlider();
+    		var myslide01 = $(".slider").bxSlider({
+    			controls:false
+    		});
+    		
+    			
+    		
+    		$(".button_le").click(function(){
+	          myslide01.goToNextSlide();
+			});
+
+			$(".button_ri").click(function(){
+				myslide01.goToPrevSlide();
+			});
+
     	});
     </script> 
+
+    <script>
+    	$(document).ready(function(){
+			$(".slider01").bxSlider({
+			    			controls:false
+			    		});
+
+
+    		var myslide02 = $(".slider02").bxSlider({
+    			mode:"vertical",
+    			pager:false,
+    			controls:false
+    		});
+    		$(".up").click(function(){
+	          myslide02.goToNextSlide();
+			});
+
+			$(".down").click(function(){
+				myslide02.goToPrevSlide();
+			});
+
+
+
+    	});
+    </script>
 </head>
 <body>
 	<div id="main_header">
@@ -94,7 +132,7 @@
 				</div>
 			</div>
 		
-		<ul class="visual">
+		<ul class="visual clearfix">
 			<li>
 				<ul class="slider">
 					<li>
@@ -105,14 +143,11 @@
 							</h2>
 							<a href="#">자세히보기 ▶</a>
 						</div>
-					</li>
-					<li>
-						<img src="images/bg_01.png" alt="">
-						<div class="textWrap">
-							<h2>
-								<span>한국</span>에서<br><span>시작</span>하는<br>새로운<span>꿈</span>
-							</h2>
-							<a href="#">자세히보기 ▶</a>
+						<div class="button_le">
+							<img src="images/le.png" alt="">
+						</div>
+						<div class="button_ri">
+							<img src="images/ri.png" alt="">
 						</div>
 					</li>
 					<li>
@@ -122,6 +157,27 @@
 								<span>한국</span>에서<br><span>시작</span>하는<br>새로운<span>꿈</span>
 							</h2>
 							<a href="#">자세히보기 ▶</a>
+						</div>
+						<div class="button_le">
+							<img src="images/le.png" alt="">
+						</div>
+						<div class="button_ri">
+							<img src="images/ri.png" alt="">
+						</div>
+					</li>
+					<li>
+						<img src="images/bg_01.png" alt="">
+						<div class="textWrap">
+							<h2>
+								<span>한국</span>에서<br><span>시작</span>하는<br>새로운<span>꿈</span>
+							</h2>
+							<a href="#">자세히보기 ▶</a>
+						</div>
+						<div class="button_le">
+							<img src="images/le.png" alt="">
+						</div>
+						<div class="button_ri">
+							<img src="images/ri.png" alt="">
 						</div>
 					</li>
 					
@@ -129,21 +185,174 @@
 				
 			</li>
 			<li>
-				<ul>
-					<li>
+				<!-- <ul>
+					<li> -->
 						<img src="images/bg_02.png" alt="">
 						<div class="textWrap01">
-							
+							<h2><span>APP</span>으로<br><span>스마트 도서관</span><br>바로 이용하자!</h2>
+							<p>모바일 열람증은<br>도서관 자료실/도서대출 등에<br>사용 할 수 있습니다.</p>
+							<a href="#">자세히 보기 ▶</a>
 						</div>
-					</li>
-				</ul>
+					<!-- </li>
+				</ul> -->
 			</li>
 
-			<li></li>
+			<li>
+				<div class="hotlink">
+				  <h2>HOTLINK</h2>
+				  <ul>
+				  	<li>
+				  		<img src="images/hot_icon01.png" alt="">
+				  		<div class="wrap"><p>국제교류<br>센터</p></div>
+				  	</li>
+				  </ul>
+				  <ul>
+				  	<li>
+				  		<img src="images/hot_icon02.png" alt="">
+				  		<div class="wrap"><p>원격지원<br>시스템</p></div>
+				  	</li>
+				  </ul>
+				  <ul>
+				  	<li>
+				  		<img src="images/hot_icon03.png" alt="">
+				  		<div class="wrap"><p>예산/결산<br>공고</p></div>
+				  	</li>
+				  </ul>
+			    </div>
+		    </li>
+		    <li>
+		    	<div class="notice">
+		         <h2>공지사항</h2>
+		    		<ul>
+		    			<li><a href="#">[공지] 한국대학교 웹진...    <span>2020-01-06</span></a></li>
+		    			<li><a href="#">[보도] 우수대학교 선정 수상  <span>2020-01-04</span></a></li>      
+		    			<li><a href="#">[공지] 대학입시 설명회       <span>2020-01-02</span></a></li>      
+		    			<li><a href="#">[공지] 2020년 1학기 성적...  <span>2020-01-01</span></a></li>      
+		    			
+		    		</ul>
+		    	</div>
+		    </li>
+		    <li>
+		    	<div class="snsnews">
+		    		<div class="snsnewsWrap clearfix">
+		    			<h2>SNS NEWS</h2>
+		    			<img src="images/학교01.png" alt="학교01">
+		    			<p>한국 대학교는<br>2020학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관... </p>
+		    		</div>
+		    	
+		    	<div class="sns_icon clearfix">
+		    		<img src="images/sns_icon01.png" alt="">
+		    		<img src="images/sns_icon02.png" alt="">
+		    		<img src="images/sns_icon03.png" alt="">
+		    		<img src="images/sns_icon04.png" alt="">
+		    	</div>
+		    	</div>
+		    </li>
+		    <li>
+		    	<div class="image">
+						<div class="imageWrap">
+							<img src="images/학교02.png" alt="학교02">
+							<a href="#">캠퍼스 투어</a>
+						</div>
+		    	</div>
+
+
+		    </li>
+		    <li>
+		    	<div class="video">
+		    		<img src="images/video_bg.png" alt="">
+
+		    	</div>
+		    </li>
+		    <li>
+		    	<ul class="slider01">
+		    		<li>
+		    			<img src="images/last_bg.png" alt="">
+		    			<div class="last_text">
+		    				<h2>
+		    					2020년 신.편입생2차모집<br><span>2020.7.01~7.10</span>	
+		    				</h2>
+		    				<a href="#">입학사전예약 ▶</a>
+		    			</div>
+		    		</li>
+		    		<li>
+		    			<img src="images/last_bg.png" alt="">
+		    			<div class="last_text">
+		    				<h2>
+		    					2020년 신.편입생2차모집<br><span>2020.7.01~7.10</span>	
+		    				</h2>
+		    				<a href="#">입학사전예약 ▶</a>
+		    			</div>
+		    		</li>
+		    		<li>
+		    			<img src="images/last_bg.png" alt="">
+		    			<div class="last_text">
+		    				<h2>
+		    					2020년 신.편입생2차모집<br><span>2020.7.01~7.10</span>	
+		    				</h2>
+		    				<a href="#">입학사전예약 ▶</a>
+		    			</div>
+		    		</li>
+		    		<li>
+		    			<img src="images/last_bg.png" alt="">
+		    			<div class="last_text">
+		    				<h2>
+		    					2020년 신.편입생2차모집<br><span>2020.7.01~7.10</span>	
+		    				</h2>
+		    				<a href="#">입학사전예약 ▶</a>
+		    			</div>
+		    		</li>
+		    		
+		    	</ul>
+		    </li>
+		    
+		
+
 		</ul>
+
+		<div class="lastWrap clearfix">
+			<div class="last">
+				<ul class="left">
+					<li>
+						<a href="#"><p>학사일정<span><  2020.07  ></span></p></a>
+					</li>
+				</ul>
+				
+			</div>
+			<div class="lastR">
+			
+				<ul class="slider02">
+					<li>
+						<p>2020-1학기 성적 열람 및 상담 신청        <span>성적열람및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</span></p>
+					</li>
+					<li>
+						<p>2020-1학기 성적 열람 및 상담 신청        <span>성적열람및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</span></p>
+					</li>
+					
+				</ul>
+				<div class="up">
+					<img src="images/up_icon.png" alt="">
+				</div>
+				<div class="down">
+					<img src="images/down_icon.png" alt="">
+				</div>
+			</div>
+		</div>
+
+			
+	
+
+
 
 
 		</div>
+	</div>
+	<div class="footer">
+		<p>회사소개  |  한국 대학교  |  개인정보취금방침  |  이용정책  |  임점/제휴문의 및 광고  |  이메일 무단수집거부</p>
+		<p>대표자: 홍길동  서울특별시 구로구 구로로 300(구로동 6가)   사업자등록번호:123-56-7890234 <br>
+		통신판매업 신고번호: 제 1234-서울 구로구-1004호  개인정보관리 책임자: 홍길동  소비자피해보상보험<br>고객센터: 1234-5678 FAX:02-1234-5678 HANGUKUNIVERSITY@HANGUK.COM 	</p>
+		<p>COPYRIGHT @ HANGUK.ALL.RIGHTS RESERVED</p>
+		
 	</div>
 
 		

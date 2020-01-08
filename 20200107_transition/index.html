@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>transition</title>
+	<link rel="stylesheet" href="../css/reset.css">
+<!-- 	<style>
+	img{display: block;}
+
+	.wrap{width: 300px;
+		  height: 300px;
+		  position: relative;
+		 	}
+	.wrap:hover .overlay{display: block;opacity: 1;}	
+
+	div.overlay{
+		  		width: 100%;
+		  		height: 300px;
+		  		background-color:rgba(225,0,0,0.5);
+		  		position: absolute;
+		  		top: 0;
+		  		display:none;
+		  		opacity: 0;
+		  		transition:0.3s;
+		  		}
+	div.overlay .text{color:white;
+					  width: 200px;
+					  height: 200px;
+					  border: 1px solid #fff;
+					  text-align: center;
+					  line-height: 200px;
+					  position: absolute;
+					  top: 50%;
+					  margin-top: -100px;
+					  left: 50%;
+					  margin-left: -100px;
+					  
+					}
+
+
+
+</style> -->
+</head>
+<body>
+	<!-- <div class="box"></div> -->
+	<div class="wrap"style="display: none;">
+		<img src="../images/testimg.jpg" alt="">
+		<div class="overlay">
+			<div class="text">Lorem ipsum.</div>
+		</div>
+	</div>
+
+	<style>
+		div.content_wrap{padding-top: 30px;padding-bottom: 30px;}
+		div.content_wrap>.headerTitle{width: 1200px;margin: 0 auto;margin-bottom: 40px;}
+		div.content_wrap>.headerTitle>h2{text-align: center;}
+		div.content_wrap>.headerTitle>h2:after{content: "";display: block;
+												width: 150px;height: 2px;
+												background-color: #333;
+												margin: 15px auto;}
+		div.content_wrap>.headerTitle>p{text-align: center;}
+		div.content_wrap ul.content{width: 1200px;margin: 0 auto;}
+		div.content_wrap ul.content li{float: left;width: 288.75px;
+									 margin-right: 15px;
+									 height: 288.75px;
+									 position: relative;
+									 /* 1200-45/4간격 15 */
+									 overflow: hidden;}
+		div.content_wrap ul.content li:last-child{margin-right: 0;}
+		.content_wrap img{width: 100%;}
+
+		ul.content>li{}
+		ul.content>li>.overlay{
+								width: 100%;
+								height: 100%;
+								background-color:rgba(0,255,0,0.5);
+								position: absolute;
+								top: 100%;
+								left: 0;
+								padding-top: 120px;
+								transition:0.3s;
+		}
+		ul.content>li>.overlay>.text{text-align: center;color:white;font-weight: bold;}
+
+		ul.content>li:hover .overlay{top: 0;}
+
+		.pink{background-color:pink;}
+		.bg1{background-image: url(../images/pc01.jpg);
+			 background-repeat: no-repeat;
+			 background-position: center;
+			 background-size: cover;
+			 background-attachment: fixed;}
+
+	</style>
+	<div class="content_wrap ">
+		<div class="headerTitle">
+			<h2>GALLERY</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, eum.</p>
+		</div>
+		<ul class="content clearfix">
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="overlay">
+					<div class="text">Lorem ipsum.</div>
+				</div>
+			</li>
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="overlay">
+					<div class="text">Lorem ipsum.</div>
+				</div>
+			</li>
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="overlay">
+					<div class="text">Lorem ipsum.</div>
+				</div>
+			</li>
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="overlay">
+					<div class="text">Lorem ipsum.</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="content_wrap bg1">
+		<div class="headerTitle">
+			<h2>GALLERY</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, eum.</p>
+		</div>
+		<ul class="content clearfix">
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="overlay">
+					<div class="text">Lorem ipsum.</div>
+				</div>
+			</li>
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="overlay">
+					<div class="text">Lorem ipsum.</div>
+				</div>
+			</li>
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="overlay">
+					<div class="text">Lorem ipsum.</div>
+				</div>
+			</li>
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="overlay">
+					<div class="text">Lorem ipsum.</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="content_wrap pink">
+		<div class="headerTitle">
+			<h2>NOTICE</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, eum.</p>
+		</div>
+		<ul class="content clearfix">
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="overlay">
+					<div class="text">Lorem ipsum.</div>
+				</div>
+			</li>
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="overlay">
+					<div class="text">Lorem ipsum.</div>
+				</div>
+			</li>
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="overlay">
+					<div class="text">Lorem ipsum.</div>
+				</div>
+			</li>
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="overlay">
+					<div class="text">Lorem ipsum.</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+</body>
+</html>
