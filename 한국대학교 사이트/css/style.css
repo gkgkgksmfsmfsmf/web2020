@@ -84,7 +84,7 @@ div.icon>ul>li p{color:white;font-size: 12px;text-align: center;}
 div.container ul.visual{padding-top: 30px;position: relative;margin-bottom: 20px;}
 div.container ul.visual ul.slider div.button_le{position: absolute;top: 195px;left: 0;}
 div.container ul.visual ul.slider div.button_ri{position: absolute;top: 195px;right: 0;}
-div.container ul.visual>li{width: 25%;height: 225px;float:left;position: relative;}
+div.container ul.visual>li{width: 25%;height: 225px;float:left;position: relative;overflow: hidden;}
 div.container ul.visual>li:nth-child(1){width: 75%;height: 450px;}
 div.container ul.visual>li:nth-child(2){height: 450px;}
 div.container ul.visual>li:nth-child(8){width: 75%;_background-color: orange;}
@@ -188,19 +188,52 @@ div.sns_icon>img{float:left;display: block;margin-right: 5px;margin-top: 20px;}
 div.sns_icon>img:nth-child(1){padding-left: 150px;}
 
 
-ul.visual div.image{width: 300px;height: 200px;}
+ul.visual div.image{width: 300px;height: 225px;}
 ul.visual div.image div.imageWrap{position: relative;}
-ul.visual div.image div.imageWrap a{color:white;
-	                  display: block;
-	                  text-align: center;
-	                  border: 1px solid none;
-	                  background-color: rgba(0,0,0,0.6);
-					  line-height: 50px;
-					  position: absolute;
-					  bottom: 0px;
-					  width: 300px;
-
-	              }
+ul.visual div.image div.imageWrap a{  color:white;
+					                  display: block;
+					                  text-align: center;
+					                  border: 1px solid none;
+					                  background-color: rgba(0,0,0,0.6);
+									  line-height: 50px;
+									  position: absolute;
+									  bottom: 0px;
+									  width: 300px;
+									   
+					              }
+/* div.aWrap { transition:0.3s;
+				              			position: absolute;
+				              			width: 300px;
+				              			height: 200px;
+				              			_top: 100%;
+				              			color:white;
+				              		    display: block;
+				              			text-align: center
+				                          border: 1px solid none;
+				              			background-color: rgba(0,0,0,0.6);
+				              			line-height: 50px;
+				              		    position: absolute;
+				              			bottom: 0px;
+				              			_width: 300px;
+				              									  
+				              
+				              
+				              			}
+				              div.image:hover .aWrap{	top: 0;
+				              						transition:0.3s;
+				              						position: absolute;
+				              						width: 300px;
+				              						height: 200px;
+				              						_top: 100%;
+				              						color:white;
+				              					    display: block;
+				              						text-align: center
+				              			            border: 1px solid none;
+				              						background-color: rgba(0,0,0,0.6);
+				              						line-height: 50px;
+				              					    
+				              						_bottom: 0px;
+				              						}	 */				              
 
 ul.visual ul.slider01 div.last_text{position: absolute;top: 30px;left: 30px;}
 ul.visual ul.slider01 h2{color:#ff503d;font-size: 30px;font-weight: normal;}

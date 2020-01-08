@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>연습</title>
+	
+</head>
+<style>
+	*{margin: 0;padding: 0;box-sizing: border-box}
+	li{list-style: none;}
+	a:visited,a:link{text-decoration: none;color: black;}
+	.clearfix:after{content: "";display: block;clear: both;}
+
+	img{display: block;}
+	div.image{position: relative;overflow: hidden;width: 300px;}
+	div.text{position: absolute;bottom:-40px;transition:0.3s;}
+	div.text a{
+	  display: block;
+	  width: 300px;
+	  height: 40px;
+	  text-align: center;
+	  line-height: 40px;
+	  color:white;
+	  background-color:rgba(0,0,0,0.8);
+	  border: 1px solid #000;
+	  }
+
+	  div.image:hover div.text{bottom:0;}
+</style>
+<body>
+	
+		<div class="image">
+			<img src="images/학교02.png" alt="">
+			<div class="text">
+				<a href="#">자세히 보기</a>
+			</div>
+		</div>
+
+</body>
+</html>

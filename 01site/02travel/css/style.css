@@ -1,0 +1,134 @@
+div#main_header{width: 100%;height: 150px;border-bottom: 3px solid #0e73a7;box-sizing: content-box;}
+div#main_header div.up{	width: 100%;
+						height: 90px;
+						background-image: url(../images/plane.png);
+						background-repeat: no-repeat;
+						background-size: cover;
+						
+					   }
+div#main_header div.up div.upWrap{width: 980px;margin: 0 auto;}		
+div#main_header div.down{width: 980px;margin: 0 auto;}			   
+div#main_header div.down>ul{}
+div#main_header div.down>ul>li{float: left;height: 60px;}
+div#main_header div.down>ul>li>a{display: block;
+								 width: 162px;
+								 height: 60px;
+								 background-color: white;
+								 color:#162731;
+								 border-left: 1px solid #ececec;
+								 text-align: center;
+								 line-height: 60px;}
+div#main_header div.down>ul>li:last-child{border-right: 1px solid #ececec;}		
+
+div.visual{width: 100%;
+		   height: 1275px;
+		   background-image: url(../images/bg.png);
+		   background-repeat: no-repeat;
+		   background-size: cover;
+		   position: relative;
+		  	}
+div.visual>img{
+			   position: absolute;
+			   top: 10%;
+			   left: 50%;
+			   animation-name: myani;
+			   animation-duration: 2s;
+			   animation-iteration-count: infinite;
+			   animation-direction: alternate;
+			   _animation-fill-mode: forwards;
+			   animation-timing-function: linear;
+
+
+			  	}		
+@keyframes myani{ 
+				  0%{top: 10%;left: 50%;} 
+				  100%{top: 15%;left: 50%;}
+
+				}			  	   						 
+div.visual div.box01{width: 482px;
+					height: 300px;
+					background-color: orange;
+					position: absolute;
+					left: 309px;
+					top: 56px;}		
+div.visual div.text h2{position: absolute;
+					  left: 850px;
+					  top: 56px;
+					  color:#142630;
+					  font-weight: bold;
+					  font-size: 75px;	
+					}		
+div.visual div.text span{border-bottom: 4px solid #142630;}					  					
+div.visual div.text p{color:#142630;
+					  font-size: 30px;
+					  padding-top: 20px;
+					  padding-left: 5px;}	
+div.visual div.box02{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 371px;
+					 left: 309px;
+					 background-color: skyblue;}
+div.visual div.box03{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 371px;
+					 left: 559px;
+					 background-color: pink;	
+					}
+div.visual div.box04{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 629px;
+					 left: 309px;
+					 background-color: pink;	
+					}		
+div.visual div.box05{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 629px;
+					 left: 559px;
+					 background-color: pink;	
+					}	
+div.visual div.box06{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 629px;
+					 left: 807px;
+					 background-color: pink;	
+					}	
+div.visual div.box07{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 629px;
+					 left: 1054px;
+					 background-color: pink;	
+					}
+div.visual div.box08{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 889px;
+					 left: 309px;
+					 background-color: pink;	
+					}	
+div.visual div.box09{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 889px;
+					 left: 559px;
+					 background-color: pink;	
+					}	
+div.visual div.box10{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 889px;
+					 left: 807px;
+					 background-color: pink;	
+					}
+div.visual div.box11{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 889px;
+					 left: 1054px;
+					 background-color: pink;	
+					}																																																						
