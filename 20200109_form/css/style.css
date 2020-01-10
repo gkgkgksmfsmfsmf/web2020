@@ -1,7 +1,8 @@
 @charset "utf-8";
 .blind,legend{display: block;position: absolute;left: 0;top: -9999px;}
 fieldset{border: 1px solid #dadada;
-		 background-color: #fff;}
+		 background-color: #fff;
+		 margin-bottom: 10px;}
 
 
 body{background-color: #eee;font-size: 12px;font-family: 'Nanum Gothic', sans-serif;}
@@ -39,6 +40,39 @@ div#header h1 a{display: block;line-height: 44px;text-indent:-9999px; }
 								background:#12b702 url(../images/btn_join2.gif) no-repeat 50% -3px;
 								text-indent: -9999px;
 								cursor: pointer;}
-																
+
+.w458{width: 458px !important;}		
+
+#content fieldset .field .btn-label{display: block;
+									width: 212px;
+									height: 31px;
+									border: 1px solid #dcdcdc;
+									position: absolute;
+									top: 8px;
+									text-align: center;
+									line-height: 31px;
+									background-color: #fff;
+									cursor: pointer;}	
+#content fieldset .field .btn-label.male{left: 15px;}														
+#content fieldset .field .btn-label.female{left: 228px;}														
+#content fieldset .field.btn-radio{height: 49px;}	
+#content fieldset .field.btn-radio input{position: relative;left: 50px;top: 14px;}	
+
+#content fieldset .field.birth label{float: left;width: 53px;height: 49px;border-right: 1px solid #efefef;
+									text-align: center;line-height: 49px;background-color: #f7f7f7;color:#999;}	
+#content fieldset .field.birth input{float: left;}									
+#content fieldset .field.birth select{float: left;
+										width: 110px;
+										height: 29px;
+										border: 0 none;
+										font-size: 15px;
+										line-height: 29px;
+										background: url(../images/sel_arr.gif) no-repeat 100% 50%;
+										-webkit-appearance:none;margin-top: 10px;margin-left: 17px;}									
+#content fieldset .field.birth .field-wall{float: left;width: 0;height: 29px;border-right: 1px solid #cdcdcd;text-indent: -9999px;margin-top: 10px;}									
+
+.w458{width: 458px !important;}
+.w145{width: 145px !important}	
+.w130{width: 130px !important}													
 
 									
