@@ -82,7 +82,7 @@ div.visual div.visualWrap div.second{
 									position: relative;
 									margin-bottom: 17px;
 									}	
-
+div.visual div.visualWrap div.third{margin-bottom: 17px;}
 div.visual div.visualWrap div.second ul li{float: left;width: 233px;height: 239px;}						
 div.visual div.visualWrap div.second ul li:last-child{margin-left: 16px;}						
 
@@ -196,7 +196,75 @@ div.third div.tWrap06{	position: absolute;
 						 						
 
 div.third div.tWrap06 p:first-child{color:white;padding-left: 15px;font-weight: bold;padding-top: 10px;}							    					
-div.third div.tWrap06 p:last-child{color:white;padding-left: 15px;font-weight: bold;}						
+div.third div.tWrap06 p:last-child{color:white;padding-left: 15px;font-weight: bold;}	
+
+div.fourth>ul>li{float:left;
+				width:233px;
+				height: 239px;
+				margin-right:16px;
+				_background-color:red;
+				position: relative;
+				overflow: hidden;}
+div.fourth>ul>li:nth-child(4){margin-right:0;}	
+
+div.fourth div.tWrap07{width: 233px;
+						height: 239px;
+						position:absolute;
+						top: 0;
+						left: 0;}					
+div.fourth div.tWrap07 img{position: absolute;left: 45px;top: 15px;}					
+div.fourth div.tWrap07 h3{position: absolute;color:white;left: 95px;top: 30px;}					
+div.fourth div.tWrap07 p{position: absolute;color:white;top: 70px;font-size: 14px;left: 25px;}	
+
+div.fourth li img.plus{position: absolute;
+						top:50%;
+						_margin-top:-15px;
+						left: 50%;
+						margin-left:-15px;}
+
+div.fourth div.tWrap08{width: 233px;
+						height: 239px;
+						position:absolute;
+						top: 0;
+						left: 0;}					
+div.fourth div.tWrap08 img{position: absolute;left:55px;top: 27px;}					
+div.fourth div.tWrap08 h3{position: absolute;color:white;left: 95px;top: 30px;}					
+div.fourth div.tWrap08 p{position: absolute;color:white;top: 70px;font-size: 14px;left: 25px;}	
+
+div.fourth div.tWrap09{width: 233px;
+						height: 239px;
+						position:absolute;
+						top: 0;
+						left: 0;}					
+div.fourth div.tWrap09 img{position: absolute;left: 50px;top: 30px;}					
+div.fourth div.tWrap09 h3{position: absolute;color:white;left: 95px;top: 30px;}					
+div.fourth div.tWrap09 p{position: absolute;color:white;top: 70px;font-size: 14px;left: 25px;}	
+
+div.fourth div.tWrap10{width: 233px;
+						height: 239px;
+						position:absolute;
+						top: 0;
+						left: 0;}					
+div.fourth div.tWrap10 img{position: absolute;left: 45px;top: 25px;}					
+div.fourth div.tWrap10 h3{position: absolute;color:white;left: 80px;top: 30px;}					
+div.fourth div.tWrap10 p{position: absolute;color:white;top: 70px;font-size: 14px;left: 25px;}	
+
+
+div.fourth div.black{width: 100%;
+						height: 239px;
+						position: absolute;
+						background-color:rgba(0,0,0,0.5);
+						left: 0;
+						top: 100%;
+						transition: 0.3s}
+div.fourth li:hover .black{top: 0;}
+
+div.fourth li:hover .tWrap07,
+div.fourth li:hover .tWrap08,
+div.fourth li:hover .tWrap09,
+div.fourth li:hover .tWrap10{top: 50%;}
+
+				
 
 
 																																											
