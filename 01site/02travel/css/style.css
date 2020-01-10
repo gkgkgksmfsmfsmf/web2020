@@ -1,4 +1,4 @@
-div#main_header{width: 100%;height: 150px;border-bottom: 3px solid #0e73a7;box-sizing: content-box;}
+div#main_header{width: 100%;height: 150px;border-bottom: 4px solid #0e73a7;box-sizing: content-box;}
 div#main_header div.up{	width: 100%;
 						height: 90px;
 						background-image: url(../images/plane.png);
@@ -30,7 +30,7 @@ div.visual{width: 100%;
 div.visual>img{
 			   position: absolute;
 			   top: 10%;
-			   left: 50%;
+			   left: 40%;
 			   animation-name: myani;
 			   animation-duration: 2s;
 			   animation-iteration-count: infinite;
@@ -41,94 +41,132 @@ div.visual>img{
 
 			  	}		
 @keyframes myani{ 
-				  0%{top: 10%;left: 50%;} 
-				  100%{top: 15%;left: 50%;}
+				  0%{top: 10%;left: 40%;} 
+				  100%{top: 15%;left: 40%;}
 
-				}			  	   						 
-div.visual div.box01{width: 482px;
-					height: 300px;
-					background-color: orange;
-					position: absolute;
-					left: 309px;
-					top: 56px;}		
+				}
+				
 div.visual div.text h2{position: absolute;
-					  left: 850px;
+					  left: 990px;
 					  top: 56px;
 					  color:#142630;
 					  font-weight: bold;
-					  font-size: 75px;	
-					}		
-div.visual div.text span{border-bottom: 4px solid #142630;}					  					
+					  font-size: 70px;}	
+
 div.visual div.text p{color:#142630;
-					  font-size: 30px;
+					  font-size: 28px;
 					  padding-top: 20px;
 					  padding-left: 5px;}	
-div.visual div.box02{position: absolute;
-					 width: 233px;
-					 height: 239px;
-					 top: 371px;
-					 left: 309px;
-					 background-color: skyblue;}
-div.visual div.box03{position: absolute;
-					 width: 233px;
-					 height: 239px;
-					 top: 371px;
-					 left: 559px;
-					 background-color: pink;	
+
+div.visual div.text span{border-bottom: 4px solid #142630;}	
+
+
+
+			
+div.visual div.visualWrap{width: 980px;
+						  height: 1000px;
+						  position: absolute;
+						  top:55px;
+				          left:50%;
+				          margin-left: -490px;
+				          }	
+
+div.visual div.visualWrap>div.first{width: 482px;
+									height: 300px;
+									background-color: #fff;
+									margin-bottom: 17px;}	
+
+div.visual div.visualWrap div.second{
+									width: 482px;
+									height: 239px;
+									position: relative;
+									margin-bottom: 17px;
+									}	
+
+div.visual div.visualWrap div.second ul li{float: left;width: 233px;height: 239px;}						
+div.visual div.visualWrap div.second ul li:last-child{margin-left: 16px;}						
+
+
+div.second div.tWrap01{
+					width: 233px;
+					height: 48px;
+					line-height: 48px;
+					background-color: #152630;
+					position: absolute;
+					bottom: 0;
+
+				}
+div.second div.tWrap01 p:first-child{float: left;color:white;padding-left: 20px;}					
+div.second div.tWrap01 p:nth-child(2){float: left;color:#6fc562;padding-left: 20px;}					
+div.second div.tWrap01 p:last-child{float: right;color:white;padding-right: 10px;}					
+
+
+div.second div.tWrap02{
+					width: 233px;
+					height: 48px;
+					line-height: 48px;
+					background-color: #152630;
+					position: absolute;
+					bottom: 0;
+
 					}
-div.visual div.box04{position: absolute;
-					 width: 233px;
-					 height: 239px;
-					 top: 629px;
-					 left: 309px;
-					 background-color: pink;	
-					}		
-div.visual div.box05{position: absolute;
-					 width: 233px;
-					 height: 239px;
-					 top: 629px;
-					 left: 559px;
-					 background-color: pink;	
-					}	
-div.visual div.box06{position: absolute;
-					 width: 233px;
-					 height: 239px;
-					 top: 629px;
-					 left: 807px;
-					 background-color: pink;	
-					}	
-div.visual div.box07{position: absolute;
-					 width: 233px;
-					 height: 239px;
-					 top: 629px;
-					 left: 1054px;
-					 background-color: pink;	
-					}
-div.visual div.box08{position: absolute;
-					 width: 233px;
-					 height: 239px;
-					 top: 889px;
-					 left: 309px;
-					 background-color: pink;	
-					}	
-div.visual div.box09{position: absolute;
-					 width: 233px;
-					 height: 239px;
-					 top: 889px;
-					 left: 559px;
-					 background-color: pink;	
-					}	
-div.visual div.box10{position: absolute;
-					 width: 233px;
-					 height: 239px;
-					 top: 889px;
-					 left: 807px;
-					 background-color: pink;	
-					}
-div.visual div.box11{position: absolute;
-					 width: 233px;
-					 height: 239px;
-					 top: 889px;
-					 left: 1054px;
-					 background-color: pink;	
-					}																																																						
+
+div.second div.tWrap02 p:first-child{float: left;color:white;padding-left: 20px;}									
+div.second div.tWrap02 p:nth-child(2){float: left;color:#6fc562;padding-left: 40px;}									
+div.second div.tWrap02 p:last-child{float: right;color:white;padding-right: 10px;}															
+
+
+div.visualWrap div.third{	width: 980px;
+							height: 239px;
+							position: relative;
+							
+
+						}
+div.third>ul>li{float:left;width:233px;height: 239px;margin-right:16px;}
+div.third>ul>li:nth-child(4){margin-right:0;}	
+					
+div.third div.tWrap03{	position: absolute;
+						width: 233px;
+						height: 65px;
+						background-color: #529351;
+						bottom: 0;
+						padding-top: 15px;
+						}	
+
+div.third div.tWrap03 p{color:white;padding-left: 15px;}						
+div.third div.tWrap03 img{color:white;padding-left: 15px;}						
+
+
+
+
+
+
+div.third div.tWrap04{
+						position: absolute;
+						width: 233px;
+						height: 65px;
+						background-color: #152630;
+						bottom: 0;
+						padding-top: 15px;
+				    }		
+						
+div.third div.tWrap04 a>p{position: absolute;color:white;top: 15px;font-size: 20px;left: 35%;}							    
+div.third div.tWrap04 p{color:white;padding-left: 15px;}									
+div.third div.tWrap04 p span{font-size: 18px;}									
+div.third div.tWrap04 img  {color:white;
+							padding-left: 15px;
+							margin-top: -28px;
+							font-size: 13px;}								
+div.third div.tWrap04 img span{font-size: 11px;}						
+
+
+
+
+div.third div.tWrap05{position: absolute;
+					width: 233px;
+					height: 65px;
+					background-color:rgba(0,0,0,0.3);
+					bottom: 0;
+					line-height: 48px;}
+
+																																											

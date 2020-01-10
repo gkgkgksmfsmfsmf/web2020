@@ -1,0 +1,161 @@
+						  	   						 
+div.visual div.box01{width: 482px;
+					height: 300px;
+					background-color: orange;
+					position: absolute;
+					left: 309px;
+					top: 56px;}		
+div.visual div.text h2{position: absolute;
+					  left: 850px;
+					  top: 56px;
+					  color:#142630;
+					  font-weight: bold;
+					  font-size: 75px;	
+					}		
+div.visual div.text span{border-bottom: 4px solid #142630;}					  					
+div.visual div.text p{color:#142630;
+					  font-size: 30px;
+					  padding-top: 20px;
+					  padding-left: 5px;}	
+div.visual div.box02{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 371px;
+					 left: 309px;
+					 background-color: skyblue;}
+div.visual div.box02 div.tWrap{position: absolute;
+								width: 233px;
+								height: 48px;
+								background-color: #152630;
+								bottom: 0;
+								line-height: 48px;}	
+div.visual div.box02 div.tWrap p:first-child{float: left;color:white;padding-left: 20px;}									
+div.visual div.box02 div.tWrap p:nth-child(2){float: left;color:#6fc562;padding-left: 20px;}									
+div.visual div.box02 div.tWrap p:last-child{float: right;color:white;padding-right: 10px;}									
+
+				 
+div.visual div.box03{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 371px;
+					 left: 559px;
+					 background-color: pink;	
+					}
+div.visual div.box03 div.tWrap01{position: absolute;
+								width: 233px;
+								height: 48px;
+								background-color: #152630;
+								bottom: 0;
+								line-height: 48px;}						
+div.visual div.box03 div.tWrap01 p:first-child{float: left;color:white;padding-left: 20px;}									
+div.visual div.box03 div.tWrap01 p:nth-child(2){float: left;color:#6fc562;padding-left: 40px;}									
+div.visual div.box03 div.tWrap01 p:last-child{float: right;color:white;padding-right: 10px;}	
+
+div.visual div.box04{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 629px;
+					 left: 309px;
+					 background-color: pink;	
+					}	
+div.visual div.box04 div.tWrap02{position: absolute;
+								width: 233px;
+								height: 65px;
+								background-color: #529351;
+								bottom: 0;
+								line-height: 48px;
+							    }
+							
+div.visual div.box04 div.tWrap02 p:first-child{color:white;padding-left: 15px;}									
+div.visual div.box04 div.tWrap02 p:nth-child(2){position: absolute;bottom: -5px;padding-left: 13px;}															
+div.visual div.box05{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 629px;
+					 left: 559px;
+					 background-color: pink;	
+					}	
+div.visual div.box05 div.tWrap03{position: absolute;
+								width: 233px;
+								height: 65px;
+								background-color: #152630;
+								bottom: 0;
+								line-height: 48px;
+							    }					
+div.visual div.box05 div.tWrap03 p:first-child{color:white;padding-left: 15px;}									
+div.visual div.box05 div.tWrap03 p:nth-child(2){position: absolute;bottom: -5px;padding-left: 13px;}					
+div.visual div.box06{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 629px;
+					 left: 807px;
+					 background-color: pink;	
+					}	
+div.visual div.box06 div.tWrap04{position: absolute;
+								width: 233px;
+								height: 65px;
+								background-color:rgba(0,0,0,0.3);
+								bottom: 0;
+								line-height: 48px;
+							    }	
+div.visual div.box06 a>p{position: absolute;color:white;top: 15px;font-size: 20px;left: 35%;}							    
+div.visual div.box06 div.tWrap04 p:first-child{color:white;padding-left: 15px;}									
+div.visual div.box06 div.tWrap04 p:first-child span{font-size: 18px;}									
+div.visual div.box06 div.tWrap04 p:nth-child(2){color:white;
+												padding-left: 15px;
+												margin-top: -28px;
+												font-size: 13px;}								
+div.visual div.box06 div.tWrap04 p:nth-child(2) span{font-size: 11px;}	
+
+div.visual div.box07{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 629px;
+					 left: 1054px;
+					 background-color: pink;	
+					}
+div.visual div.box07 a>p:first-child{position: absolute;top: 0;padding-top: 10px;padding-left: 10px;}					
+div.visual div.box07 a>span{position: absolute;
+							top: 70px;
+							color:#43619d;
+							font-weight: bold;
+							margin-top: 10px;
+							padding-left: 10px;}	
+div.visual div.box07 a>img{position: absolute;top: 90px;}
+
+div.visual div.box07 div.tWrap05{position: absolute;
+								width: 233px;
+								height: 65px;
+								background-color:#44619d;
+								bottom: 0;
+								line-height: 48px;
+							    }	
+div.visual div.box07 div.tWrap05 p:first-child{color:white;padding-left: 15px;font-weight: bold;}							    					
+div.visual div.box07 div.tWrap05 p:last-child{color:white;padding-left: 15px;margin-top: -28px;font-weight: bold;}							    					
+div.visual div.box08{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 889px;
+					 left: 309px;
+					 background-color: pink;	
+					}	
+div.visual div.box09{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 889px;
+					 left: 559px;
+					 background-color: pink;	
+					}	
+div.visual div.box10{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 889px;
+					 left: 807px;
+					 background-color: pink;	
+					}
+div.visual div.box11{position: absolute;
+					 width: 233px;
+					 height: 239px;
+					 top: 889px;
+					 left: 1054px;
+					 background-color: pink;	
