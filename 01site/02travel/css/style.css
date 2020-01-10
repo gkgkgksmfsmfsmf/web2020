@@ -131,9 +131,10 @@ div.third div.tWrap03{	position: absolute;
 						background-color: #529351;
 						bottom: 0;
 						padding-top: 15px;
+						font-size: 
 						}	
 
-div.third div.tWrap03 p{color:white;padding-left: 15px;}						
+div.third div.tWrap03 p{color:white;padding-left: 15px;font-weight: bold;}						
 div.third div.tWrap03 img{color:white;padding-left: 15px;}						
 
 
@@ -168,5 +169,34 @@ div.third div.tWrap05{position: absolute;
 					background-color:rgba(0,0,0,0.3);
 					bottom: 0;
 					line-height: 48px;}
+div.third li:nth-child(3){position: relative;}					
+div.third li:nth-child(3) a>p{position: absolute;
+							color:white;
+							top: 15px;
+							font-size: 20px;
+							left:85px;
+							}					
+div.third div.tWrap05 p:first-child{color:white;padding-left: 15px;}					
+div.third div.tWrap05 p:last-child{ color:white;
+									padding-left: 15px;
+									margin-top: -28px;
+									font-size: 13px;}					
+div.third div.tWrap05 p:last-child span{font-size: 11px;}					
+
+div.third div.tWrap06{	position: absolute;
+						width: 233px;
+						height: 65px;
+						background-color:#44619d;
+						bottom: 0;
+						}
+ div.third li:nth-child(4){position: relative;}
+ div.third div.box07_t p{position: absolute;top: 0;padding-left: 10px;padding-top: 15px;font-size: 14px;}
+ div.third div.box07_t span{position: absolute;top: 95px;padding-left: 10px;color:#43619d;font-weight: bold;}
+ div.third div.box07_t img{position: absolute;top: 120px;padding-left: 10px;}
+						 						
+
+div.third div.tWrap06 p:first-child{color:white;padding-left: 15px;font-weight: bold;padding-top: 10px;}							    					
+div.third div.tWrap06 p:last-child{color:white;padding-left: 15px;font-weight: bold;}						
+
 
 																																											
