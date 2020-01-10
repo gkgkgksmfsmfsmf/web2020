@@ -21,11 +21,12 @@ div#main_header div.down>ul>li>a{display: block;
 div#main_header div.down>ul>li:last-child{border-right: 1px solid #ececec;}		
 
 div.visual{width: 100%;
-		   height: 1275px;
+		   height: 1123px;
 		   background-image: url(../images/bg.png);
 		   background-repeat: no-repeat;
 		   background-size: cover;
 		   position: relative;
+		   margin-bottom: 20px;
 		  	}
 div.visual>img{
 			   position: absolute;
@@ -64,7 +65,7 @@ div.visual div.text span{border-bottom: 4px solid #142630;}
 
 			
 div.visual div.visualWrap{width: 980px;
-						  height: 1000px;
+						  height: 1123px;
 						  position: absolute;
 						  top:55px;
 				          left:50%;
@@ -263,6 +264,8 @@ div.fourth li:hover .tWrap07,
 div.fourth li:hover .tWrap08,
 div.fourth li:hover .tWrap09,
 div.fourth li:hover .tWrap10{top: 50%;}
+
+div.footer{width: 980px;height: 94px;background-color: red;margin: 0 auto;}
 
 				
 
