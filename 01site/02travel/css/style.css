@@ -9,11 +9,11 @@ div#main_header div.up{	width: 100%;
 
 div#main_header div.up div.upWrap{width: 980px;margin: 0 auto;}	
 
-form{}
 
+form{width: 482px;height: 200px;padding-top: 20px;margin-bottom: 10px;}
 fieldset{border: 0 none;}
 		legend{display: block;position: absolute;right: 0;top: -9999px;}
-		.f_layer{width: 350px;margin: 0 auto;}
+		.f_layer{width: 350px;_margin: 0 auto;}
 		.f_layer fieldset label{display: block;padding: 5px 0;}
 		.f_layer fieldset select{display: block;
 								width: 100%;
@@ -52,6 +52,7 @@ fieldset{border: 0 none;}
         .f_layer fieldset .sleft01 input
         {width: 100%;border-radius: 5px;border: 1px solid #aaa;
 			height: 30px;text-indent: 8px;font-size: 1em;font-weight:bold;}
+div.firstTwrap{width: 350px;height: 35px;background-color: red;}
 
 
 
