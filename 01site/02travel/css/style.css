@@ -9,19 +9,23 @@ div#main_header div.up{	width: 100%;
 
 div#main_header div.up div.upWrap{width: 980px;margin: 0 auto;}	
 
-div#main_header div.up div.upWrap div.le{float: left;margin-right: 70px;}
+div#main_header div.up div.upWrap div.le{float: left;margin-right: 110px;}
 div#main_header div.up div.upWrap div.le h1{float: right;padding-top: 10px;}
 div#main_header div.up div.upWrap div.le img{float: left;padding-top: 16px;}
 div#main_header div.up div.upWrap div.le span{color: white;}
 div#main_header div.up div.upWrap div.le p{color: white;font-size: 13px;margin-left: 10px;}
 
-div#main_header div.up div.upWrap div.mi{width: 400px;
+div#main_header div.up div.upWrap div.mi{width: 300px;
                                         height: 40px;
                                         background-color: orange;
                                         float: left;
+                                        margin-top: 20px;
                                         
                                         }
 div#main_header div.up div.upWrap div.ri{float: right;}
+div#main_header div.up div.upWrap div.ri p{float: left;color:white;margin-right: 15px; font-size: 18px;margin-top:33px;}
+div#main_header div.up div.upWrap div.ri p span{color:white;font-weight: bold}
+div#main_header div.up div.upWrap div.ri img{float: right;margin-top: 33px;}
 
 div#main_header div.down{width: 980px;margin: 0 auto;}			   
 div#main_header div.down>ul{}
