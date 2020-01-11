@@ -9,30 +9,50 @@ div#main_header div.up{	width: 100%;
 
 div#main_header div.up div.upWrap{width: 980px;margin: 0 auto;}	
 
+form{}
+
 fieldset{border: 0 none;}
 		legend{display: block;position: absolute;right: 0;top: -9999px;}
-		.f_layer{width: 400px;margin: 0 auto;}
+		.f_layer{width: 350px;margin: 0 auto;}
 		.f_layer fieldset label{display: block;padding: 5px 0;}
 		.f_layer fieldset select{display: block;
 								width: 100%;
-								height: 40px;
+								height: 30px;
 								font-size: 1em;
 								text-indent: 8px;
 								border-radius: 5px;}
 
-		.f_layer fieldset .sleft ,
-		.f_layer fieldset .sright {
-			float: left;width: 195px;
-		}
+        .f_layer fieldset .sleft ,
+        .f_layer fieldset .sright{float: left;}
+        
+        .f_layer fieldset .sleft{width: 170px;margin-right: 10px;}
+        .f_layer fieldset .sright{width: 170px;}
 
-		.f_layer fieldset .sleft{margin-right: 10px;}						
-		.f_layer fieldset .sright{}
+		.f_layer fieldset .sleft01 ,
+		.f_layer fieldset .sright01,
+        .f_layer fieldset .sright02
+        {float: left;}
+        
+        .f_layer fieldset .sleft01{width: 170px;margin-right: 10px;}
+		.f_layer fieldset .sright01{width: 80px;margin-right: 10px;}
+		.f_layer fieldset .sright02{width: 80px;}
 
-		.f_layer fieldset .sleft input,
-		.f_layer fieldset .sright input{
+		.f_layer fieldset .sleft input
+		{
 			width: 100%;border-radius: 5px;border: 1px solid #aaa;
-			height: 40px;text-indent: 8px;font-size: 1em;font-weight:bold;
+			height: 30px;text-indent: 8px;font-size: 1em;font-weight:bold;
 		}
+        .f_layer fieldset .sright input
+		{
+			width: 100%;border-radius: 5px;border: 1px solid #aaa;
+			height: 30px;text-indent: 8px;font-size: 1em;font-weight:bold;
+		}
+        .f_layer fieldset .sright01 input,
+        .f_layer fieldset .sright02 input,
+        .f_layer fieldset .sleft01 input
+        {width: 100%;border-radius: 5px;border: 1px solid #aaa;
+			height: 30px;text-indent: 8px;font-size: 1em;font-weight:bold;}
+
 
 
 div#main_header div.up div.upWrap div.le{float: left;margin-right: 110px;}
