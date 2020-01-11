@@ -6,7 +6,23 @@ div#main_header div.up{	width: 100%;
 						background-size: cover;
 						
 					   }
-div#main_header div.up div.upWrap{width: 980px;margin: 0 auto;}		
+
+div#main_header div.up div.upWrap{width: 980px;margin: 0 auto;}	
+
+div#main_header div.up div.upWrap div.le{float: left;margin-right: 70px;}
+div#main_header div.up div.upWrap div.le h1{float: right;padding-top: 10px;}
+div#main_header div.up div.upWrap div.le img{float: left;padding-top: 16px;}
+div#main_header div.up div.upWrap div.le span{color: white;}
+div#main_header div.up div.upWrap div.le p{color: white;font-size: 13px;margin-left: 10px;}
+
+div#main_header div.up div.upWrap div.mi{width: 400px;
+                                        height: 40px;
+                                        background-color: orange;
+                                        float: left;
+                                        
+                                        }
+div#main_header div.up div.upWrap div.ri{float: right;}
+
 div#main_header div.down{width: 980px;margin: 0 auto;}			   
 div#main_header div.down>ul{}
 div#main_header div.down>ul>li{float: left;height: 60px;}
@@ -265,7 +281,12 @@ div.fourth li:hover .tWrap08,
 div.fourth li:hover .tWrap09,
 div.fourth li:hover .tWrap10{top: 50%;}
 
-div.footer{width: 980px;height: 94px;background-color: red;margin: 0 auto;}
+div.footer{width: 980px;height: 94px;_background-color: red;margin: 0 auto;}
+
+div.footer div.pWrap{width:500px;height: 20px;_background-color: orange;margin-bottom: 10px;}
+div.footer div.pWrap p{float: left;margin-right: 10px;}
+div.footer div.pWrap p:nth-child(2){font-weight: bold;}
+div.footer p:last-child{float: left;}
 
 				
 
