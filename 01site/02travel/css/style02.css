@@ -56,3 +56,45 @@ div.firstTwrap a{width: 350px;height: 35px;background-color:#ea4f1f;border: 1px 
 display: block;}
 div.firstTwrap img{float: left;margin-left: 120px;margin-right: 10px;margin-top: 8px;}
 div.firstTwrap p{color:white;line-height: 35px;float: left;text-align: center;}						  	   						 
+<a href="#"> 
+					            <ul class="bx-pager">
+					             <li class="clearfix" data-slide-index="0">
+					                <img src="images/house_icon.png" alt="">
+					                <p>공항예약</p>
+					             </li>
+					              <li class="clearfix" data-slide-index="1">
+					                <img src="images/house_icon.png" alt="">
+					                <p>호텔예약</p>
+					             </li>
+					             <li class="clearfix" data-slide-index="2">
+					                <img src="images/house_icon.png" alt="">
+					                <p>렌트카</p>
+					             </li>
+					              <li class="clearfix" data-slide-index="3">
+					                <img src="images/house_icon.png" alt="">
+					                <p>휴양지</p>
+					             </li>                                                               
+					            </ul>
+					           </a>
+
+
+					     
+<div class="btn">
+					          	<a href="#" data-slide-index="0">
+						           	<img src="images/house_icon.png" alt="">
+				          	     	<p>공항예약</p>
+			          	     	</a>
+			          	     	<a href="#" data-slide-index="1">
+						           	<img src="images/house_icon.png" alt="">
+				          	     	<p>호텔예약</p>
+			          	     	</a>
+			          	     	<a href="#" data-slide-index="2">
+						           	<img src="images/house_icon.png" alt="">
+				          	     	<p>렌트카</p>
+			          	     	</a>
+			          	     	<a href="#" data-slide-index="3">
+						           	<img src="images/house_icon.png" alt="">
+				          	     	<p>휴양지</p>
+			          	     	</a>
+							</div>
+					           
