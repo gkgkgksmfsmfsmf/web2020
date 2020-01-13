@@ -77,9 +77,24 @@ div#header h1 a{display: block;line-height: 44px;text-indent:-9999px; }
 {float: left;width: 0;height: 29px;border-right: 1px solid #cdcdcd;text-indent: -9999px;margin-top: 10px;}	
 
 #content fieldset .field.confirm .btn-click{width:99px;height:31px;border: 1px solid #dcdcdc;position: absolute;
-											top: 7px;right: 15px;cursor: pointer;background-color: white;}								
+											top: 7px;right: 15px;cursor: pointer;background-color: white;}		
 
-.w458{width: 458px !important;}
+
+#footer{text-align: center;padding: 48px 0 80px;}
+#footer .btm-menu ul{margin-left: 20px;}
+#footer .btm-menu ul>li{float: left;}
+#footer .btm-menu ul>li>a{display: block;color:#333;padding: 0 8px;line-height: 12px;}
+
+address{font-style: normal;}
+#footer address{padding: 20px;}
+#footer address strong a{display: inline-block;
+						width: 63px;
+						height: 11px;
+						background-image: url(../images/ci_naver.gif);
+						text-indent: -9999px;}
+#footer address span a{font-weight: bold;}						
+
+.w458{width: 458px !important}
 .w145{width: 145px !important}	
 .w130{width: 130px !important}	
 .w205{width: 205px !important}		
