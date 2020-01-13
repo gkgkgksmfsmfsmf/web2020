@@ -62,7 +62,7 @@ fieldset{border: 0 none;}
 div.firstTwrap{width: 350px;height: 35px;margin-top: 20px;}
 div.firstTwrap a{width: 350px;height: 35px;background-color: orange;border: 1px solid orange;border-radius: 5px;
 display: block;}
-div.firstTwrap img{float: left;margin-left: 120px;margin-right: 10px;}
+div.firstTwrap img{float: left;margin-left: 120px;margin-right: 10px;margin-top: 8px;}
 div.firstTwrap p{color:white;line-height: 35px;float: left;text-align: center;}
 
 
@@ -347,7 +347,7 @@ div.footer{width: 980px;height: 94px;_background-color: red;margin: 0 auto;}
 
 div.footer div.pWrap{width:500px;height: 20px;_background-color: orange;margin-bottom: 10px;}
 div.footer div.pWrap p{float: left;margin-right: 10px;}
-div.footer div.pWrap p:nth-child(2){font-weight: bold;}
+_div.footer div.pWrap p:nth-child(2){font-weight: bold;}
 div.footer p:last-child{float: left;}
 
 
