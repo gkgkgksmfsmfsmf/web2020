@@ -10,10 +10,12 @@ div#main_header div.up{	width: 100%;
 div#main_header div.up div.upWrap{width: 980px;margin: 0 auto;}	
 div.btn{float: left;width: 110px;height: 300px;margin-right: 10px;}
 div.btn li{width: 110px;height: 75px;background-color: dodgerblue;padding-top: 18px;color: white;}
-
+div.btn li:nth-child(2){background-image: url(../images/li_bg.png);}
+div.btn li:nth-child(3){background-color:#0099cb;padding-left: 2px;}
+div.btn li:nth-child(4){background-color:#0099cb;padding-left: 2px;}
 div.btn li:hover{width: 110px;height: 75px;background-color:white;color:gray;}
-div.btn li img{float: left;padding-top: 5px;margin-left: 3px;margin-right: 3px;}
-div.btn li p{float: left;padding-top: 10px;}
+div.btn li img{float: left;padding-top: 5px;margin-left: 10px;margin-right: 3px;}
+div.btn li p{float: left;padding-top: 10px;font-size: 14px;}
 
 form{width: 482px;height: 200px;padding-top: 25px;float: left;}
 fieldset li:first-child{margin-bottom: 10px;}
@@ -60,7 +62,7 @@ fieldset{border: 0 none;}
         {width: 100%;border-radius: 5px;border: 1px solid #aaa;
 			height: 30px;text-indent: 8px;font-size: 1em;font-weight:bold;}
 div.firstTwrap{width: 350px;height: 35px;margin-top: 20px;}
-div.firstTwrap a{width: 350px;height: 35px;background-color: orange;border: 1px solid orange;border-radius: 5px;
+div.firstTwrap a{width: 350px;height: 35px;background-color:#ea4f1f;border: 1px solid #ea4f1f;border-radius: 5px;
 display: block;}
 div.firstTwrap img{float: left;margin-left: 120px;margin-right: 10px;margin-top: 8px;}
 div.firstTwrap p{color:white;line-height: 35px;float: left;text-align: center;}
