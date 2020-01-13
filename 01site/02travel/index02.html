@@ -1,76 +1,73 @@
-<div class="box01"></div>
-			<div class="text">
-				<h2>TRAVEL <span>GO</span>
-				<p>지금, 여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠자자! </p>
-				</h2>
-			</div>
-			<div class="box02">
-				<img src="images/box02.png" alt="">
-				<a href="#">
-					<div class="tWrap clearfix">
-							<p>프랑스</p>
-							<p>￦ 1,900,000~</p>
-							<p>></p>
-					</div>
-				</a>
-			</div>
-			<div class="box03">
-				<img src="images/box03.png" alt="">
-				<a href="#">
-					<div class="tWrap01 clearfix">
-							<p>일본</p>
-							<p>￦ 890,000~</p>
-							<p>></p>
-					</div>
-				</a>
-			</div>
-			<div class="box04">
-				<img src="images/box04.png" alt="">
-				<a href="#">
-					<div class="tWrap02 clearfix">
-							<p>HILLTON HOTEL (PARIS)</p>
-							<p><img src="images/star.png" alt=""></p>
-							
-					</div>
-				</a>
-			</div>
-			<div class="box05">
-				<img src="images/box05.png" alt="">
-				<a href="#">
-					<div class="tWrap03 clearfix">
-							<p>관광명소(디즈니랜드)</p>
-							<p><img src="images/star.png" alt=""></p>
-							
-					</div>
-				</a>
-			</div>
-			<div class="box06">
-				
-				<a href="#">
-					<img src="images/box06.png" alt="">
-					<p>TOKYO</p>
-					<div class="tWrap04 clearfix">
-							<p><span>20℃</span>구름조금</p>
-							<p>습도60% 바람 남남동 2<span>m/s</span> </p>		
-					</div>
-				</a>
-			</div>
-			<div class="box07">
-				
-				<a href="#">
-					<img src="images/box07.png" alt="">
-					<p>"해외여행은 처음이었는데,<br>하이미디어여행 덕분에 무사히<br>다녀올 수 있었어요. "</p>
-					<span>프랑스 파리 자유여행 </span>	
-					<img src="images/star2.png" alt="">
-					<div class="tWrap05 clearfix">
-						<p>facebook 여행후기</p>
-						<p>(임정희님)</p>
-			
-					</div>
-				</a>
-			</div>
-			<div class="box08"></div>
-			<div class="box09"></div>
-			<div class="box10"></div>
-			<div class="box11"></div>
-		</div>
+<div class="btn">
+                   <a href="#"> 
+                    <ul>
+                     <li class="clearfix">
+                        <img src="images/house_icon.png" alt="">
+                        <p>공항예약</p>
+                     </li>
+                      <li class="clearfix">
+                        <img src="images/house_icon.png" alt="">
+                        <p>호텔예약</p>
+                     </li>
+                     <li class="clearfix">
+                        <img src="images/house_icon.png" alt="">
+                        <p>렌트카</p>
+                     </li>
+                      <li class="clearfix">
+                        <img src="images/house_icon.png" alt="">
+                        <p>휴양지</p>
+                     </li>                                                               
+                    </ul>
+                   </a>
+        		</div>
+	            <div class="form">
+	                <form action="update.php" class="f_layer">
+                        <fieldset>
+                            <legend>여행일정</legend>
+                            <ul>
+                                <li>
+                                    <label for="golo">가고싶은 나라를 선택하세요.</label>
+                                    <select name="nara" id="golo">
+                                        <option value="">선택하세요</option>
+                                        <option value="미국">미국</option>
+                                        <option value="일본">일본</option>
+                                        <option value="중국">중국</option>
+                                    </select>
+
+                                </li>
+                                <li>
+                                    <div class="sleft">
+                                        <label for="sdate">출발일</label>
+                                        <input type="date" id="sdate">
+                                    </div>
+                                    <div class="sright">
+                                        <label for="edate">도착일</label>
+                                        <input type="date" id="edate">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sleft01">
+                                        <label for="cgrade">좌석등급</label>
+                                        <select name="cgrade" id="cgrade">
+                                            <option value="비지니스">비지니스</option>
+                                            <option value="이코노미">이코노미</option>
+                                        </select>
+                                    </div>
+                                    <div class="sright01">
+                                        <label for="num">성인</label>
+                                        <input type="number" id="num" placeholder="1">
+                                    </div>
+                                    <div class="sright02">
+                                        <label for="num">아이</label>
+                                        <input type="number" id="num" placeholder="1">
+                                    </div>
+                                </li>
+                            </ul>
+                        </fieldset>
+					                <div class="firstTwrap">
+					                	<a href="#" class="clearfix">
+						                    <img src="images/search.png" alt="">
+						                    <p>검색하기</p>
+					               		 </a>
+					        		</div>
+                    </form>
