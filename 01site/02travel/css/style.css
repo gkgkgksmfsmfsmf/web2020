@@ -84,11 +84,21 @@ div#main_header div.up div.upWrap div.le p{color: white;font-size: 13px;margin-l
 
 div#main_header div.up div.upWrap div.mi{width: 300px;
                                         height: 40px;
-                                        background-color: orange;
+                                        _background-color: orange;
                                         float: left;
-                                        margin-top: 20px;
-                                        
-                                        }
+                                        margin-top: 28px;
+                                        position: relative;
+                                    	margin-right:120px;}
+div.mi form.f_layer01{width: 300px;height: 40px;}                                   	
+div.mi form.f_layer01 fieldset p.field{position: absolute;top: 8px;left: 10px;}                                    	
+div.mi form.f_layer01 fieldset{display: block;
+	border: 1px solid #000;border-radius:30px;width: 300px;height: 40px;
+	position: absolute;top: 0;left:0;background-color: white;}  
+div.mi img{position: absolute;top: 14px;right: 9px;}	                                  	
+
+div#main_header 
+
+
 div#main_header div.up div.upWrap div.ri{float: right;}
 div#main_header div.up div.upWrap div.ri p{float: left;color:white;margin-right: 15px; font-size: 18px;margin-top:33px;}
 div#main_header div.up div.upWrap div.ri p span{color:white;font-weight: bold}
