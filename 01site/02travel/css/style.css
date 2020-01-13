@@ -95,7 +95,7 @@ div.mi form.f_layer01 fieldset{display: block;
 	border: 1px solid #000;border-radius:30px;width: 300px;height: 40px;
 	position: absolute;top: 0;left:0;background-color: white;}  
 div.mi img{position: absolute;top: 14px;right: 9px;}	                                  	
-
+div.mi form.f_layer01 fieldset input{border:none;}
 div#main_header 
 
 
