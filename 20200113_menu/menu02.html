@@ -3,10 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>meun</title>
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="../css/reset.css">
 	<style>
+	  div.gnbWrap{position: relative;z-index:1;}
 		nav.gnb{width: 1000px;margin:0 auto;background-color:pink;}
-		nav.gnb>ul{position: relative;} 
+		nav.gnb>ul{position: relative;z-index:1;} 
 		nav.gnb>ul>li{float: left;width: 20%;}
 		nav.gnb>ul>li>a{
 			display: block;line-height:40px;text-align: center;
@@ -18,12 +20,20 @@
 			width: 100%;background-color: #f00;}
 		.submenu>li{float: left;}
 		.submenu>li>a{display: block;line-height:30px;padding:0 20px;}
+		nav.gnb:hover .menubar{display: block;}
+		.menubar{display:none;width:100%;height:30px;background-color:skyblue;position: absolute;left:0;}
 		.visual{height: 400px;background-color: #0f0;}
-
-		
 	</style>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider();
+		});
+	</script>
 </head>
 <body>
+	
 	<div class="gnbWrap">
 		<nav class="gnb">
 			<ul class="clearfix">
@@ -65,7 +75,14 @@
 			</ul>
 			<div class="menubar"></div>
 		</nav>
+		
 	</div>
-	<div class="visual"></div>
+	<div class="visual">
+		<ul class="slider">
+			<li><img src="../images/pc01.jpg" alt=""></li>
+			<li><img src="../images/pc02.jpg" alt=""></li>
+			<li><img src="../images/pc03.jpg" alt=""></li>
+		</ul>
+	</div>
 </body>
 </html>
