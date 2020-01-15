@@ -103,7 +103,7 @@ div#main_header
 div#main_header div.up div.upWrap div.ri{float: right;}
 div#main_header div.up div.upWrap div.ri p{float: left;color:white;margin-right: 15px; font-size: 18px;margin-top:33px;}
 div#main_header div.up div.upWrap div.ri p span{color:white;font-weight: bold}
-div#main_header div.up div.upWrap div.ri img{float: right;margin-top: 33px;}
+div#main_header div.up div.upWrap div.ri img{float: right;margin-top: 33px;margin-left: 5px;}
 
 div#main_header div.downWrap{background-color: white;}
 div#main_header div.down{width: 980px;margin: 0 auto;}			   
