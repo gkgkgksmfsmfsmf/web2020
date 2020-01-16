@@ -126,6 +126,7 @@ div.visual{width: 100%;
 		   background-size: cover;
 		   position: relative;
 		   margin-bottom: 20px;
+		   overflow: hidden;
 		  	}
 div.visual>img{
 			   position: absolute;
@@ -139,24 +140,46 @@ div.visual>img{
 			   animation-timing-function: linear;
 
 
-			  	}		
+			  	}
+div.visual div.air>img{
+						position: absolute;
+						top:60%
+						left: 1%;
+						animation-name:myaniani;
+						animation-duration: 4s;
+					    _animation-iteration-count: infinite;
+					    animation-direction: alternate;
+					    animation-timing-function: linear;
+					    animation-fill-mode: forwards;
+
+
+
+
+}		
 @keyframes myani{ 
 				  0%{top: 10%;left: 40%;} 
 				  100%{top: 15%;left: 40%;}
 
 				}
-				
-div.visual div.text h2{position: absolute;
+@keyframes myaniani{
+					0%{top: 60%;left: 1%;}
+					100%{top:10%;left:1920px;}
+
+}				
+div.visual div.text{position: absolute;
+					left:55%;
+					top: 5%;}				
+div.visual div.text h2{/* position: absolute;
 					  left: 990px;
-					  top: 56px;
+					  top: 56px; */
 					  color:#142630;
 					  font-weight: bold;
 					  font-size: 70px;}	
 
 div.visual div.text p{color:#142630;
 					  font-size: 28px;
-					  padding-top: 20px;
-					  padding-left: 5px;}	
+					  /* padding-top: 20px;
+					  padding-left: 5px; */}	
 
 div.visual div.text span{border-bottom: 4px solid #142630;}	
 

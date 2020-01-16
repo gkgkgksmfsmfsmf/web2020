@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>write</title>
+	<script>
+		function aClick(){
+				window.alert("안녕하세요"); //윈도우 없어도 됨
+				document.write("안녕하세요");
+				console.log("안녕하세요");
+		}
+		//aClick(); //함수실행--> 그냥실행
+	</script>
+</head>
+<body>
+	<a href="#" onclick="aClick()">클릭</a> <!-- 클릭히면실행 -->
+
+	<script>
+		function bWrite(){
+			document.write("<h3>welcome!</h3>");
+			document.write("2+5는 <br>");
+			document.write("7입니다.")
+		}	
+		bWrite();
+	
+	</script>
+
+
+</body>
+</html>
