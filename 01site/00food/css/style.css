@@ -1,0 +1,48 @@
+legend{display: block;position: absolute;right: 0;top: -9999px;}
+form.f_layer01{width:390px;height: 50px;margin-top: 50px;position: relative;}
+fieldset{display: block;border: 1px solid #fd7104;border-radius: 30px;background-color: white;}
+input#search{width: 280px;border:none;}
+p.field{height: 40px;padding-top: 8px;padding-left: 10px;}
+p.field label{color:#fd7104;font-weight: bold;margin-right: 5px;}
+div.main_header{width: 100%;height: 176px;_background-color: pink;}
+div.main_header div.up100p{width: 100%;height: 126px;border-bottom: 2px solid #79b74b;}
+div.main_header div.upWrap{width: 980px;height: 176px;_background-color: skyblue;margin: 0 auto;}
+div.main_header div.up{width: 980px;height: 126px;_background-color: orange;}
+div.main_header div.up div.le{float: left;margin-right: 40px;}
+div.main_header div.up div.le img{margin-top: 45px;}
+div.main_header div.up div.mi{float: left;position: relative;margin-right: 40px;}
+div.main_header div.up div.mi img{position: absolute;right: 11px;top: 62px;}
+div.main_header div.up div.ri{float: left;margin-top: 65px;width: 300px;}
+div.main_header div.up div.ri ul{}
+div.main_header div.up div.ri ul li{float: left;margin-right: 13px;}
+div.main_header div.up div.ri ul li:last-child{margin-right: 0;}
+div.main_header div.up div.ri ul li a{display: block;font-size: 14px;
+										color:#8c8c8c;}
+
+div.main_header div.down{width: 100%;height: 50px;background-color: white;}										
+div.main_header div.down ul{}										
+div.main_header div.down ul li{float: left;width: 16.66%;line-height: 50px;_border-right: 1px solid #000;}										
+div.main_header div.down ul li a{display: block;text-align: center;}										
+div.main_header div.down ul li a:hover{color:white;background-color: #79b74b;font-weight: bold;}			
+
+div.visual{width: 100%;height: 300px;}
+div.visual ul.slider{width: 100%;height:300px;;position: relative;}
+_div.visual ul.slider div.imgWrap{position: absolute;top: 40px;left: 20%}
+div.visual li.visualBg{height: 450px;background-image: url(../images/visual_bg.png);}
+div.visual li.visualBg div.visualBgwrap{width: 1000px;margin: 0 auto;}
+.bx-wrapper {
+		    -moz-box-shadow:0 none;
+		    -webkit-box-shadow: 0 none;
+		    box-shadow: 0 none;
+		    border: 0 none;
+			margin-bottom: 0;}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+		    position: absolute;
+		    bottom: 20px;
+		    width: 100%;
+		}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #fd7104;
+}
+										
+

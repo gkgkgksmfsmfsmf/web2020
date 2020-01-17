@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>shadow</title>
+	<style>
+		body{background-color: #000;}
+		.blur:hover{text-shadow:3px 3px 5px red; }/*  x축 y축 흐리게 */
+		.blur{transition:0.3s;
+				color:white;
+				font-weight: bold;}
+		.shadow{text-shadow: 0 0 5px white, -3px -3px 3px red;
+				color:gray;}
+		.box{width:100px;height: 100px;
+			margin: 0 auto;
+			background-color: #fff;
+			line-height: 100px;
+			text-align: center;
+			_box-shadow: 5px 5px yellow;
+			transition: 0.3s}
+		.box:hover{box-shadow: 5px 5px 5px yellow,-5px -5px 5px red;}
+	</style>
+</head>
+<body>
+	<div class="blur">drop shadow</div>
+	<div class="shadow">drop shadow</div>
+	<div class="box">box shadow</div>
+	
+</body>
+</html>

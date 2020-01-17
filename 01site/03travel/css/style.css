@@ -93,7 +93,7 @@ div#main_header div.up div.upWrap div.mi{width: 400px;
 div.mi form.f_layer01{width: 300px;height: 40px;}                                   	
 div.mi form.f_layer01 fieldset p.field{position: absolute;top: 8px;left: 10px;}                                    	
 div.mi form.f_layer01 fieldset{display: block;
-	border: 1px solid #fff;border-radius:30px;width: 400px;height: 40px;
+	border: 1px solid #fd7104;border-radius:30px;width: 400px;height: 40px;
 	position: absolute;top: 0;left:0;background-color: white;}  
 div.mi img{position: absolute;top: 14px;right: 9px;}	                                  	
 div.mi form.f_layer01 fieldset input{border:none;}
