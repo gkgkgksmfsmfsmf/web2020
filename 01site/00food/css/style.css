@@ -21,16 +21,24 @@ div.main_header div.up div.ri ul li a{display: block;font-size: 14px;
 
 div.main_header div.down{width: 100%;height: 50px;background-color: white;}										
 div.main_header div.down ul{}										
-div.main_header div.down ul li{float: left;width: 16.66%;line-height: 50px;_border-right: 1px solid #000;}										
-div.main_header div.down ul li a{display: block;text-align: center;}										
-div.main_header div.down ul li a:hover{color:white;background-color: #79b74b;font-weight: bold;}			
+div.main_header div.down>ul>li{float: left;width:196px;line-height: 50px;_border-right: 1px solid #000;}										
+div.main_header div.down>ul>li a{display: block;text-align: center;}										
+_div.main_header div.down ul>li a:hover{color:white;background-color: #79b74b;font-weight: bold;}			
+ul.submenu{display: none;}
+ul.submenu li{width: 195px;text-align: center;line-height: 40px;}
+ul.submenu li a{font-size: 14px;}
+ul.submenu li:hover{background-color: skyblue;}
+div.down>ul:hover .submenu{display: block;}
 
 div.visual{width: 100%;height: 300px;}
 div.visual ul.slider{width: 100%;height:300px;;position: relative;}
-div.visual ul.slider div.imgWrap{position: absolute;top: 30px;}
-div.visual li.visualBg{height: 450px;background-image: url(../images/visual_bg.png);}
-div.visual li.visualBg div.visualBgwrap{width: 980px;margin: 0 auto;}
-div.visual li.visualBg div.visualBgwrap div.imgWrap img:last-child{position: absolute;top: 180px;left: 290px;}
+div.visual ul.slider div.imgWrap{position: absolute;top: 0;}
+div.visual li.visualBg{height: 330px;background-image: url(../images/visual_bg.png);}
+div.visual li.visualBg div.visualBgwrap{width: 980px;margin: 0 auto;position: relative;}
+div.visual div.visualBgwrap div.textWrap{position: absolute;right: 0;top: 30px;}
+
+
+
 .bx-wrapper {
 		    -moz-box-shadow:0 none;
 		    -webkit-box-shadow: 0 none;
