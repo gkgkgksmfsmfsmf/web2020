@@ -27,9 +27,10 @@ div.main_header div.down ul li a:hover{color:white;background-color: #79b74b;fon
 
 div.visual{width: 100%;height: 300px;}
 div.visual ul.slider{width: 100%;height:300px;;position: relative;}
-_div.visual ul.slider div.imgWrap{position: absolute;top: 40px;left: 20%}
+div.visual ul.slider div.imgWrap{position: absolute;top: 30px;}
 div.visual li.visualBg{height: 450px;background-image: url(../images/visual_bg.png);}
-div.visual li.visualBg div.visualBgwrap{width: 1000px;margin: 0 auto;}
+div.visual li.visualBg div.visualBgwrap{width: 980px;margin: 0 auto;}
+div.visual li.visualBg div.visualBgwrap div.imgWrap img:last-child{position: absolute;top: 180px;left: 290px;}
 .bx-wrapper {
 		    -moz-box-shadow:0 none;
 		    -webkit-box-shadow: 0 none;
