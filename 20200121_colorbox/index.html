@@ -9,11 +9,34 @@
 	<script src="js/jquery.colorbox.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".modal").colorbox();
+			$(".modal").colorbox({
+				rel:"modal"
+			});
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:600,
+				innerHeight:388
+			});
+			
 		});
+
+
 	</script>
+	<style>
+		ul{width: 1000px;margin: 0 auto;}
+		ul li{float: left;width: 250px;}
+		ul li img{width: 100%;display: block;}
+	</style>
 </head>
 <body>
-	<a href="../images/img1.jpg" class="modal"><img src="../images/testimg.jpg" alt=""></a>
+	<!-- <a href="../images/img1.jpg" class="modal"><img src="../images/testimg.jpg" alt=""></a> -->
+
+	<ul class="clearfix">
+		<li><a href="../images/img1.jpg" class="modal" title="앵무새"><img src="../images/img1.jpg" alt=""></a></li>
+		<li><a href="../images/img2.jpg" class="modal" title="꽃"><img src="../images/img2.jpg" alt=""></a></li>
+		<li><a href="../images/img3.jpg" class="modal" title="거위"><img src="../images/img3.jpg" alt=""></a></li>
+		<li><a href="https://www.youtube.com/embed/JdG48ARFLWw" class="youtube" title="바이킹"><img src="../images/img4.jpg" alt=""></a></li>
+	</ul>
+	
 </body>
 </html>
