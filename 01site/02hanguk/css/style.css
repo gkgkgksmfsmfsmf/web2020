@@ -187,7 +187,7 @@ ul.visual div.snsnews div.snsnewsWrap h2{color:#01183a;padding-top: 20px;padding
 div.sns_icon>img{float:left;display: block;margin-right: 5px;margin-top: 20px;}
 div.sns_icon>img:nth-child(1){padding-left: 150px;}
 
-
+div.video{width: 300px;height: 225px;}
 ul.visual div.image{width: 300px;height: 225px;}
 ul.visual div.image div.imageWrap{position: relative;}
 ul.visual div.image div.imageWrap a{  color:white;
