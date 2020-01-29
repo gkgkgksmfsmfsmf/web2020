@@ -11,9 +11,16 @@
 <script src="js/jquery.bxslider.js"></script>
 <script>
 	$(document).ready(function(){
-		$(".slider").bxSlider();		
+		$(".slider").bxSlider();
+		$(".slider01").bxSlider({
+			controls:false
+		});	
+		$(".slider02").bxSlider({
+			controls:false
+		});		
 	});
 </script>
+
 <body>
 	<header id="main_header">
 		<div id="header_top" class="clearfix">
@@ -59,20 +66,92 @@
 				</li>
 				<li class="slide_2st">
 					<div class="slider_txt">
-						<h3>Lorem ipsum dolor sit.</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, optio!</p>
+						<div class="pWrap">
+							<p>신라리워즈</p>
+						</div>
+						<h3>REWORDS 2020 HAPPY NEW YEAR</h3>
+						<p>2020년 호텔신라 캘린더 1개, 제이준 마스크시트 20매, 리워즈 3천포인트제공 </p>
+						<div class="box">
+							<a href="#">패키지 바로가기</a>
+						</div>
+					</div>
+				</li>
+				<li class="slide_3st">
+					<div class="slider_txt">
+						<div class="pWrap">
+							<p>신라리워즈</p>
+						</div>
+						<h3>REWORDS 2020 HAPPY NEW YEAR</h3>
+						<p>2020년 호텔신라 캘린더 1개, 제이준 마스크시트 20매, 리워즈 3천포인트제공 </p>
+						<div class="box">
+							<a href="#">패키지 바로가기</a>
+						</div>
 					</div>
 				</li>
 			</ul>
 		</div>
 		<div class="content">
 			<ul class="clearfix">
-				<li class="ct1st"></li>
-				<li class="ct2st"></li>
-				<li class="ct3st"></li>
-				<li class="ct4st"></li>
-				<li class="ct5st"></li>
-				<li class="ct6st"></li>
+				<li class="ct1st">
+					<a href="#">
+						<img src="images/1st_li.png" alt="">
+						<div class="li_1st_textWrap">
+							<img src="images/1st_li_text.png" alt="">
+							<p class="one">MEMBERS ONLY</p>
+							<p class="two">MORE VIEW</p>
+						</div>
+					</a>
+				</li>
+				<li class="ct2st">
+						<div class="slider01Wrap">
+							<ul class="slider01">
+								<li><img src="images/2st_li.png" alt=""></li>
+								<li><img src="images/2st_li.png" alt=""></li>
+								<li><img src="images/2st_li.png" alt=""></li>
+							</ul>
+							<div class="blackBox">
+								<a href="#">
+									<div class="pWrap">
+										<p class="one01">서울신라호텔</p>
+										<p class="two01">Urban Lifestyle Hotel</p>
+									</div>
+								</a>
+							</div>
+						</div>
+				</li>
+				<li class="ct3st">
+					<div class="slider02Wrap">
+							<ul class="slider02">
+								<li><img src="images/3st_li.png" alt=""></li>
+								<li><img src="images/3st_li.png" alt=""></li>
+								<li><img src="images/3st_li.png" alt=""></li>
+							</ul>
+							<div class="blackBox01">
+								<a href="#">
+									<div class="pWrap">
+										<p class="one01">제주신라호텔</p>
+										<p class="two01">An Exclusive Getaway</p>
+									</div>
+								</a>
+							</div>
+						</div>
+				</li>
+				<li class="ct4st">
+					<a href="#">
+						<img src="images/4st_li.png" alt="">
+					</a>
+				</li>
+				<li class="ct5st">
+					<a href="#">
+						<img src="images/5st_li.png" alt="">
+						<img src="images/youtube_active.png" alt="">
+					</a>
+				</li>
+				<li class="ct6st">
+					<a href="#">
+						<img src="images/6st_li.png" alt="">
+					</a>
+				</li>
 			</ul>
 		</div>
 	</header>
