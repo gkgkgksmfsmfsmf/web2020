@@ -6,11 +6,15 @@ header#main_header{
 	position: relative;
 }
 /* header_top */
-	ul.util_menu{margin-left: auto;width: 355px;}
+	ul.util_menu{margin-left: auto;width: 378px;}
 	ul.util_menu li{float: left;}
 	ul.util_menu>li>a{
-		display: block;font-size: 13px;color:white;padding: 0 16px;line-height: 15px;
+		display: block;font-size: 13px;color:white;padding-left:17px;
+		padding-right: 16px;line-height: 15px;padding-top: 5px;
 	}
+	ul.util_menu li:last-child{width: 88px;padding-left: 3px;}
+	ul.util_menu li:last-child img{position: absolute;top: 10px;right: 5px;}
+	
 
 
 	#header_top{
@@ -23,11 +27,11 @@ header#main_header{
 	#header_top > h1{float: left;_background-color: #f00;height: 50px;}
 	#header_top > h1 img{display: block;}
 	#header_top > #main_menu{float: right;_background-color: #0f0;}
-	#main_menu{}
+	#main_menu{line-height: 65px;}
 	#main_menu>ul.menu{}
 	#main_menu>ul.menu>li{float: left;height: 50px;}
-	#main_menu>ul.menu>li>a{display: block;line-height: 50px;padding: 0 30px;color:white;}
-	#main_menu>ul.menu>li:last-child img{position: absolute;top: 33px;right: 0;}
+	#main_menu>ul.menu>li>a{display: block;line-height: 50px;padding: 0 28px;color:white;}
+	#main_menu>ul.menu>li:last-child img{position: absolute;top: 39px;right: 0;}
 
 /* slider */
 
