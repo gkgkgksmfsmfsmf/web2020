@@ -259,7 +259,10 @@ li.ct3st .bx-wrapper .bx-pager,li.ct3st  .bx-wrapper .bx-controls-auto {
 .container .vision li:hover{
 	box-shadow: 8px 8px 10px rgba(0,0,0,0.5);
 	transform: translate(-10px,-10px);
+
 }
+.container .vision .card img{transform:rotateY(0deg) translate(0px);transition:.2s;}
+.container .vision li:hover .card img{transform:rotateY(180deg) translate(20px);}
 .container .vision li:last-child{margin-right: 0;}
 .container .vision .card{
 	width: 300px;height: 300px;_background-color: skyblue;
@@ -340,7 +343,7 @@ li.ct3st .bx-wrapper .bx-pager,li.ct3st  .bx-wrapper .bx-controls-auto {
 }
 .made ul li.three>ul{
 	background-color: #fff;width: 315px;height: 305px;position: absolute;bottom: 10px;
-	border-left: 2px solid #cccccc;border-right: 2px solid #cccccc;
+	_border-left: 2px solid #cccccc;border-right: 2px solid #cccccc;
 	padding-top: 110px;
 }
 .made ul li.three ul>li{border-bottom: 1px solid #cccccc;width: 260px;margin: 0 auto;padding-bottom: 5px;padding-top: 3px;}
@@ -426,7 +429,7 @@ div.p_right>img{float: left;margin-right: 5px;margin-top: 18px;}
 .at_menu>ul>li{width: 210px;height: 60px;float: left;border-right: 1px solid #bebebe;}
 .at_menu>ul>li:last-child{border-right: none;}
 .at_menu>ul>li>a{display: block;line-height: 60px;text-align: center;}
-.at_menu>ul>li>a.active{color:white;background-color: #183464;}
+.at_menu>ul>li>a.active{color:#183464;_background-color: #183464;}
 
 /*sub_text*/
 .sub_text{position: absolute;top: 50%;margin-top: -15px;left: 50%;margin-left: -100px;}
@@ -448,15 +451,15 @@ div.p_right>img{float: left;margin-right: 5px;margin-top: 18px;}
 .location>ul>li{float: left;margin-right: 10px;}
 .location>ul>li:last-child a{color: #162e58;}
 .location>p.sub01_01{
-	color:#162e58;position: absolute;top: 80px;left: 50%;margin-left: -16px;
+	color:#162e58;position: absolute;top: 80px;left: 50%;margin-left: -20px;
 	font-size: 26px;
 }
 .location>p.sub01_02{
-	color:#162e58;position: absolute;top: 80px;left: 50%;margin-left: -60px;
+	color:#162e58;position: absolute;top: 80px;left: 50%;margin-left: -80px;
 	font-size: 26px;
 }
 .location>p.sub01_03{
-	color:#162e58;position: absolute;top: 80px;left: 50%;margin-left: -60px;
+	color:#162e58;position: absolute;top: 80px;left: 50%;margin-left: -80px;
 	font-size: 26px;
 }
 .location>p:before{

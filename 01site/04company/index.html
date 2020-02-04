@@ -3,17 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>THE SHILLA</title>
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">	
 </head>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/jquery.bxslider.js"></script>
+<script src="js/wow.js"></script>
+<script>
+		new WOW().init();
+</script>
 <script>
 	$(document).ready(function(){
 		$(".slider").bxSlider({
 			speed:1500,
-			auto:true
+			auto:true,
+			pager:false
 		});
 		$(".slider01").bxSlider({
 			controls:false,
@@ -21,7 +27,7 @@
 			// speed:600
 		});	
 		$(".slider02").bxSlider({
-			// controls:false,
+			 controls:false,
 			// auto:true
 		});		
 	});
@@ -44,7 +50,7 @@
 						<a href="#">한국어</a>
 						<img src="images/down.png" alt="">
 					</li>
-				</ul>
+			</ul>
 				<ul class="menu">
 					<li><a href="sub01_01.html">호텔신라소개</a></li>
 					<li><a href="sub02_01.html">신라리워즈</a></li>
@@ -96,9 +102,9 @@
 				</li>
 			</ul>
 		</div>
-		<div class="content">
+		<div class="content animated fadelnDown">
 			<ul class="clearfix">
-				<li class="ct1st">
+				<li class="ct1st wow fadeInDown" data-wow-delay="0">
 					<a href="#">
 						<img src="images/1st_li.png" alt="">
 						<div class="li_1st_textWrap">
@@ -108,7 +114,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="ct2st">
+				<li class="ct2st wow fadeInDown" data-wow-delay="0.3s">
 						<div class="slider01Wrap">
 							<ul class="slider01">
 								<li><img src="images/2st_li02.png" alt=""></li>
@@ -125,7 +131,7 @@
 							</div>
 						</div>
 				</li>
-				<li class="ct3st">
+				<li class="ct3st wow fadeInDown" data-wow-delay="0.6s">
 					<div class="slider02Wrap">
 							<ul class="slider02">
 								<li><img src="images/3st_li01.png" alt=""></li>
@@ -142,7 +148,7 @@
 							</div>
 						</div>
 				</li>
-				<li class="ct4st">
+				<li class="ct4st wow fadeInDown" data-wow-delay="0.9s">
 					<a href="#">
 						<div class="pWrap01">
 							<p class="p_one">신라호텔 X 현대자동차</p>
@@ -153,17 +159,17 @@
 						
 					</a>
 				</li>
-				<li class="ct5st">
+				<li class="ct5st wow fadeInDown" data-wow-delay="1.2s">
 					<a href="#">
 						<img src="images/5st_li.png" alt="">
 						<img src="images/youtube_active.png" alt="">
 					</a>
 				</li>
-				<li class="ct6st">
+				<li class="ct6st wow fadeInDown" data-wow-delay="1.5s">
 					<a href="#">
-						<img src="images/6st_li02.png" alt="">
+						<img src="images/6st_li.png" alt="">
 						<div class="pWrap02">
-							<!-- <img src="images/1st_li_text.png" alt=""> -->
+							<img src="images/1st_li_text.png" alt="">
 							<p>누구나 한 번쯤 꿈꾸는 일상으로부터의 탈출<br>호텔신라와 함께 특별한 하루를 보내세요</p>
 						</div>
 					</a>
@@ -224,7 +230,7 @@
 				<p class="puls"><a href="#">+더보기</a></p>
 			</li>
 			<li class="two">
-				<a href="#"><img src="images/event_icon.png" alt=""></a>
+				<a href="#"><img src="images/event_icon.png" alt="" class=""></a>
 				<a href="#"><p class="event">E N E N T</p></a>
 				<div class="Wrap clearfix">
 					<div class="left">
