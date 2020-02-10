@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>calc</title>
+	<script>
+		var sum = 0;
+		function calc(cBox){
+			if(cBox.checked){
+				sum += parseInt(cBox.value);
+			}else{
+				sum -= parseInt(cBox.value);
+			}
+			
+			console.log(sum);
+
+			document.getElementById("sumtext").value = sum;
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="checkbox" name="hap" value="10000" onclick="calc(this)">모자 10,000원 <br>
+		<input type="checkbox" name="shose" value="30000" onclick="calc(this)">신발 30,000원 <br>
+		<input type="checkbox" name="bag" value="80000" onclick="calc(this)">가방 80,000원 <br>
+		지불할 금액 <input type="text" id="sumtext" value="0">
+	</form>
+</body>
+</html>
