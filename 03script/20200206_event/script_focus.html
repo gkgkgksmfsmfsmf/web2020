@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>focus</title>
+	<script>
+		function check(obj){
+
+			alert(obj.value);
+		}
+	</script>
+</head>
+<body onload="document.getElementById('name').focus();">
+	<form>
+		이름 <input type="text" id="name" onblur="check(this)"><br>
+		전화번호 <input type="text" id="tel">
+	</form>
+</body>
+</html>
