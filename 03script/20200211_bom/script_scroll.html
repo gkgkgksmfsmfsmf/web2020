@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>scroll</title>
+	<script>
+		//window.onload = function(){}
+		function startScroll(){
+			setInterval("autoScroll()",100)
+		}
+		function autoScroll(){
+			window.scrollBy(0,5)
+		}
+		window.onload = function(){
+			startScroll();
+		}
+
+	</script>
+</head>
+<!-- <body onload="startScroll()"> -->
+<body>
+	Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Error <br>dolorem quod <br>aliquam possimus, quasi quo <br> consequatur vel minus cupiditate repudiandae.Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Error <br>dolorem quod <br>aliquam possimus, quasi quo <br> consequatur vel minus cupiditate repudiandae.Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Error <br><br>dolorem quod <br>aliquam possimus, quasi quo <br> consequatur vel minus cupiditate repudiandae.Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Error <br>dolorem quod <br>aliquam possimus, quasi quo <br> consequatur vel minus cupiditate repudiandae.Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Error <br>dolorem quod <br>aliquam possimus, quasi quo <br> consequatur vel minus cupiditate repudiandae.Lorem ipsum dolor sit amet, consectetur <br><br> adipisicing elit. Error <br>dolorem quod <br>aliquam possimus, quasi quo <br> consequatur vel minus cupiditate repudiandae.Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Error <br>dolorem quod <br>aliquam possimus, quasi quo <br> consequatur vel minus cupiditate repudiandae.<br>
+	<a href="#" onclick="window.scrollTo(0,0)">위로</a><br>
+	<a href="#" onclick="window.location.href='http://www.daum.net'">다음으로이동</a><br>
+	<div onclick="window.location.href='http://www.daum.net'">다음으로이동2</div>
+	<div onclick="dUrl()">다음으로이동3</div>
+	<script>
+		function dUrl(){
+			window.location.href = "http://www.daum.net";
+		}
+	</script>
+</body>
+</html>
