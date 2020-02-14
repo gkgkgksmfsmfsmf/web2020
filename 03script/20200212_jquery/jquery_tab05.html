@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>tab</title>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<script src="../../js/jquery-3.1.1.min.js"></script>
+	<style>
+		img{display: block;}
+		.contentWrap{width: 1000px;margin: 0 auto;}
+
+		.contentWrap ul{
+			width: 1000px;
+			_border-top: 1px solid #ccc;_border-bottom: 1px solid #ccc;
+			display: table;
+		}
+		.contentWrap li{
+			position: relative;
+			line-height: 50px;
+			display:table-cell;
+			text-align: center;
+
+		}
+		.contentWrap li:hover:after{
+			content:"";border-width:3px;
+			border-style: solid;
+			border-radius: 99999999999999px;
+			border-color:brown;
+			position: absolute;left:50%;top: 5px;transform: translateX(-50%);
+		}
+		.contentWrap li:hover {_border-top: 2px solid red;color:brown;}
+		.contentWrap li.active:after{
+			content:"";border-width:3px;border-style: solid;
+			border-radius: 9999999999999px;
+			border-color:brown;
+			position: absolute;left:50%;top: 5px;transform: translateX(-50%);
+		}
+	
+		.contentWrap li.active {_border-top: 2px solid red;color:brown;}
+		
+
+		/*.contentWrap .contentImg img{display: none;}
+		.contentWrap .contentImg img:first-child{display: block;}*/
+
+		div.menu{
+			width: 500px;margin: 0 auto;_background-color: skyblue;
+			margin-bottom: 10px;
+			margin-top: 50px;}
+		.menu>ul>li{float: left;width: 50%;line-height: 30px;text-align: center;}
+
+		/*.menu>ul>li:after{
+			content: "";display: block;
+			border-bottom: 3px solid brown;
+			display: none;
+			width:50px;
+			margin: 0 auto;
+		}*/
+		.menu>ul>li.active01:after{
+			content: "";display: block;
+			border-bottom: 3px solid brown;
+			width:50px;
+			margin: 0 auto;}
+		/*.menu>ul>li.active01:hover{font-weight: bold;}*/	
+		/*.menu>ul>li{font-weight: bold;}*/
+		/*.menu>ul>li:after{content: "";display: block;
+			border-bottom: 3px solid brown;
+			width:50px;
+			margin: 0 auto;}*/
+
+		.menu>ul>li:hover:after{
+			content: "";display: block;
+			border-bottom: 3px solid brown;
+			
+			width:50px;
+			margin: 0 auto;}
+
+		.menu>ul>li:hover{font-weight: bold;}
+	</style>
+
+	<script>
+		$(document).ready(function(){
+			$(".menu>ul>li").click(function(){
+				$(".menu>ul>li").removeClass();
+				$(this).addClass("active01");
+			});
+			$(".contentImg>img").hide().eq(0).show();
+			
+			$(".contentWrap>ul>li").click(function(){
+				var liNum = $(this).index();
+				$(".contentWrap>ul>li").removeClass();
+				$(this).addClass("active");
+				$(".contentImg>img").hide();
+				$(".contentImg>img").eq(liNum).fadeIn();
+
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="menu">
+		<ul class="clearfix">
+			<li class="active01">특화아이템</li>
+			<li>특화공간</li>
+		</ul>
+	</div>
+	<div class="contentWrap">
+		<ul class="clearfix">
+			<li class="active">H클린현관(H Entrance)</li>
+			<li>H 버스(H Bath)</li>
+			<li>H 세컨리빙(H 2nd Living)</li>
+			<li>H 월(H Wall)</li>
+			<li>H 워드(H With)</li>
+		</ul>
+		<div class="contentImg">
+			<img src="../images/img01.jpg" alt="">
+			<img src="../images/img02.jpg" alt="">
+			<img src="../images/img03.jpg" alt="">
+			<img src="../images/img04.jpg" alt="">
+			<img src="../images/img05.jpg" alt="">
+		</div>
+	</div>
+</body>
+</html>

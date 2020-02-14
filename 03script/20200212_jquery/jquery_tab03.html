@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>tab</title>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<script src="../../js/jquery-3.1.1.min.js"></script>
+	<style>
+		img{display: block;}
+		.contentWrap{width: 1000px;margin: 0 auto;}
+
+		.contentWrap ul{
+			width: 1000px;
+			border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;
+			display: table;
+		}
+		.contentWrap li{
+			position: relative;
+			line-height: 50px;
+			display:table-cell;
+			_background-color:orange;
+		}
+		.contentWrap li:after{
+			content:"";border-width:6px;border-style: solid;
+			border-color:red transparent transparent transparent;
+			position: absolute;left:50%;top: 0;transform: translateX(-50%);
+		}
+		.contentWrap li.active:after{
+			content:"";border-width:6px;border-style: solid;
+			border-color:red transparent transparent transparent;
+			position: absolute;left:50%;top: 0;transform: translateX(-50%);
+		}
+		.contentWrap li a{display: block;text-align: center;}
+		.contentWrap li a.active:hover {border-top: 2px solid red;color:red;}
+		.contentWrap li a:hover {border-top: 2px solid red;color:red;}
+
+		.contentWrap .contentImg img{display: none;}
+		.contentWrap .contentImg img:first-child{display: block;}
+
+	</style>
+	<script>
+		$(document).ready(function(){
+			$(".contentWrap>ul>li").click(function(){
+				var liNum = $(this).index();
+				$(".contentWrap>ul>li").removeClass();
+				$(this).addClass("active");
+				$(".contentImg>img").hide();
+				$(".contentImg>img").eq(liNum).fadeIn();
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="contentWrap">
+		<ul class="clearfix">
+			<li><a href="#" class="active">국내1호 정지수 확장</a></li>
+			<li><a href="#" class="active">라이브 파티플래닝 교육과정</a></li>
+			<li><a href="#" class="active">생활문화예술을 이끄는 힘</a></li>
+			<li><a href="#" class="active">갤러리</a></li>
+			<li><a href="#" class="active">언론에 바라본 WOW</a></li>
+		</ul>
+		<div class="contentImg">
+			<img src="../images/img01.jpg" alt="">
+			<img src="../images/img02.jpg" alt="">
+			<img src="../images/img03.jpg" alt="">
+			<img src="../images/img04.jpg" alt="">
+			<img src="../images/img05.jpg" alt="">
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>tab</title>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<script src="../../js/jquery-3.1.1.min.js"></script>
+	<style>
+		img{display: block;}
+		.contentWrap{width: 1000px;margin: 0 auto;}
+
+		.contentWrap ul{
+			width: 1000px;
+			border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;
+			display: table;
+		}
+		.contentWrap li{
+			position: relative;
+			line-height: 50px;
+			display:table-cell;
+			text-align: center;
+
+		}
+		.contentWrap li:hover:after{
+			content:"";border-width:4px;border-style: solid;
+			border-radius: 99999px;
+			border-color:red;
+			position: absolute;left:50%;top: 0;transform: translateX(-50%);
+		}
+		.contentWrap li:hover {border-top: 2px solid red;color:red;}
+		.contentWrap li.active:after{
+			content:"";border-width:4px;border-style: solid;
+			border-radius: 99999px;
+			border-color:red;
+			position: absolute;left:50%;top: 0;transform: translateX(-50%);
+		}
+	
+		.contentWrap li.active {border-top: 2px solid red;color:red;}
+		
+
+		/*.contentWrap .contentImg img{display: none;}
+		.contentWrap .contentImg img:first-child{display: block;}*/
+
+	</style>
+	<script>
+		$(document).ready(function(){
+
+			$(".contentImg>img").hide().eq(0).show();
+			
+			$(".contentWrap>ul>li").click(function(){
+				var liNum = $(this).index();
+				$(".contentWrap>ul>li").removeClass();
+				$(this).addClass("active");
+				$(".contentImg>img").hide();
+				$(".contentImg>img").eq(liNum).fadeIn();
+
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="contentWrap">
+		<ul class="clearfix">
+			<li class="active">국내1호 정지수 확장</li>
+			<li>라이브 파티플래닝 교육과정</li>
+			<li>생활문화예술을 이끄는 힘</li>
+			<li>갤러리</li>
+			<li>언론에 바라본 WOW</li>
+		</ul>
+		<div class="contentImg">
+			<img src="../images/img01.jpg" alt="">
+			<img src="../images/img02.jpg" alt="">
+			<img src="../images/img03.jpg" alt="">
+			<img src="../images/img04.jpg" alt="">
+			<img src="../images/img05.jpg" alt="">
+		</div>
+	</div>
+</body>
+</html>

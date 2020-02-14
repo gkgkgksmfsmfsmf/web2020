@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<script src="../../js/jquery-3.1.1.min.js"></script>
+	<style>
+		p{background-color: skyblue;}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$("button.on").click(function(){
+				$("div")
+				.css("font-size",30)
+				.css("background-color","skyblue");
+
+				$("p").css({
+					"font-size":20,
+					"background-color":"red"
+				});
+			});
+			$("button.out").click(function(){
+				$("div")
+				.css("font-size",16)
+				.css("background-color","white");
+
+				$("p").css({
+					"font-size":16,
+					"background-color":"white"
+				});
+			});
+			
+		});
+	</script>
+</head>
+<body>
+	<p>Lorem ipsum.</p>
+	<div>test</div>
+	<p>Quia, unde.</p>
+	<p>Aut, iusto.</p>
+	<p>Quidem, reiciendis.</p>
+	<p>Blanditiis, sit!</p>
+
+	<button class="on">글자변형</button>
+	<button class="out">원상태로</button>
+</body>
+</html>
