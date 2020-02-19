@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>tab + modal</title>
+	<link rel="stylesheet" href="css/colorbox.css">
+	<link rel="stylesheet" href="../../css/reset.css">
+	<script src="../../js/jquery-3.1.1.min.js"></script>
+	<script src="../../js/jquery.colorbox-min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".nav>ul>li").click(function(){
+				var liNum = $(this).index();
+				$(".nav>ul>li").removeClass();
+				$(this).addClass("active");
+				
+				$(".imgWrap>a.modal").hide().eq(liNum).fadeIn();
+
+				$(".modal").colorbox();
+				$(".video").colorbox({
+					iframe:true,
+					innerWidth:600,
+					innerHeight:338
+				});
+
+			});
+			var current = 0;
+			$(".right").click(function(){
+				if(current<1){
+					current++;
+					move();
+				}
+			});
+			$(".left").click(function(){
+				if(current<0){
+					current--;
+					move();
+				}
+			});
+			function move(){
+				var num = current*1000*-1;
+				// $(".container>ul").css("left",num);
+				$(".container>ul").stop().animate({left:num},300)
+				
+			};
+
+		});
+	</script>
+	<style>
+		.nav{width: 1000px;margin: 0 auto;overflow: hidden;}
+		.nav>ul{width: 1000px;}
+		.nav>ul>li{
+			width: 25%;line-height: 30px;text-align: center;
+			float: left;padding: 10px;margin-bottom: 20px;
+		}
+		img{display: block;}
+		.active{background-color:darkgreen;color:white;}
+		.imgWrap>a.modal{display: none;}
+		.imgWrap>a.modal:first-child{display: block;}
+		
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul class="clearfix">
+			<li class="active">menu1</li>
+			<li>menu2</li>
+			<li>menu3</li>
+			<li>menu4</li>
+		</ul>
+		<div class="imgWrap">
+			<a href="../images/tourgallery_j1a.jpg" class="modal" >
+				<img src="../images/tourgallery_j1a.jpg" alt="" >
+			</a>
+			<a href="../images/tourgallery_j2a.jpg" class="modal">
+				<img src="../images/tourgallery_j2a.jpg" alt="" >
+			</a>
+			<a href="../images/tourgallery_j3a.jpg" class="modal">
+				<img src="../images/tourgallery_j3a.jpg" alt="" >
+			</a>
+			<a href="../images/tourgallery_j4a.jpg" class="modal">
+				<img src="../images/tourgallery_j4a.jpg" alt="" >
+			</a>
+		</div>
+		<style>
+			.down{width: 1040px;height: 200px;margin: 0 auto;}
+			.down>div{float: left;}
+			.left{}
+			.current{width: 1000px;height: 200px;position: relative;overflow: hidden;}
+			.right{}
+			
+			.current ul{position: absolute;left: 0;width: 2000px;}
+			.current ul li{float: left;width: 200px;height: 200px;}
+			.current img{display: block;width: 200px;height: 200px;}
+		</style>
+		
+	</div>
+	<div class="down clearfix">
+		<div class="left">
+			<img src="../images/btn_left.gif" alt="">
+		</div>
+		<div class="current">
+				<ul class="clearfix">
+					<li class="thumb"><img src="../images/box02.png" alt=""></li>
+					<li class="thumb"><img src="../images/box03.png" alt=""></li>
+					<li class="thumb"><img src="../images/box04.png" alt=""></li>
+					<li class="thumb"><img src="../images/box02.png" alt=""></li>
+					<li class="thumb"><img src="../images/box03.png" alt=""></li>
+		
+					<li class="thumb"><img src="../images/box04.png" alt=""></li>
+					<li class="thumb"><img src="../images/box02.png" alt=""></li>
+					<li class="thumb"><img src="../images/box03.png" alt=""></li>
+					<li class="thumb"><img src="../images/box04.png" alt=""></li>
+					<li class="thumb"><img src="../images/box02.png" alt=""></li>
+
+				</ul>
+			</div>
+		<div class="right">
+			<img src="../images/btn_right.gif" alt="">
+		</div>
+	</div>
+</body>
+</html>
