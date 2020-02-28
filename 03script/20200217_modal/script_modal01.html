@@ -14,7 +14,7 @@
 				$(".nav>ul>li").removeClass();
 				$(this).addClass("active");
 				
-				$(".imgWrap>a.modal").hide().eq(liNum).fadeIn();
+				$(".imgWrap>a").hide().eq(liNum).fadeIn();
 
 				$(".modal").colorbox();
 				$(".video").colorbox({
@@ -26,21 +26,24 @@
 			});
 			var current = 0;
 			$(".right").click(function(){
-				if(current<1){
+				if(current<3){
 					current++;
-					move();
+					if(current==3){current=0;}
+					
 				}
+				move();
 			});
 			$(".left").click(function(){
-				if(current<0){
+				if(current>-1){
 					current--;
-					move();
+					if(current==-1){current=2;}
 				}
+				move();
 			});
 			function move(){
 				var num = current*1000*-1;
 				// $(".container>ul").css("left",num);
-				$(".container>ul").stop().animate({left:num},300)
+				$(".current ul").stop().animate({left:num},300)
 				
 			};
 
@@ -57,6 +60,7 @@
 		.active{background-color:darkgreen;color:white;}
 		.imgWrap>a.modal{display: none;}
 		.imgWrap>a.modal:first-child{display: block;}
+		a{display: block;}
 		
 	</style>
 </head>
@@ -89,7 +93,7 @@
 			.current{width: 1000px;height: 200px;position: relative;overflow: hidden;}
 			.right{}
 			
-			.current ul{position: absolute;left: 0;width: 2000px;}
+			.current ul{position: absolute;left: 0;width: 3000px;}
 			.current ul li{float: left;width: 200px;height: 200px;}
 			.current img{display: block;width: 200px;height: 200px;}
 		</style>
@@ -107,6 +111,12 @@
 					<li class="thumb"><img src="../images/box02.png" alt=""></li>
 					<li class="thumb"><img src="../images/box03.png" alt=""></li>
 		
+					<li class="thumb"><img src="../images/box04.png" alt=""></li>
+					<li class="thumb"><img src="../images/box02.png" alt=""></li>
+					<li class="thumb"><img src="../images/box03.png" alt=""></li>
+					<li class="thumb"><img src="../images/box04.png" alt=""></li>
+					<li class="thumb"><img src="../images/box02.png" alt=""></li>
+
 					<li class="thumb"><img src="../images/box04.png" alt=""></li>
 					<li class="thumb"><img src="../images/box02.png" alt=""></li>
 					<li class="thumb"><img src="../images/box03.png" alt=""></li>

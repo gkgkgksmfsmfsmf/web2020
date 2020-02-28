@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>banner slider02</title>
+</head>
+<body>
+	<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>banner slider</title>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<script src="../../js/jquery-3.1.1.min.js"></script>
+	<script>
+		// $(function(){
+		// 	// $("#wrapper li").eq(2).css("top",0).animate({top:"-100%"},1000);
+		// 	// $("#wrapper li").eq(0).css("top","100%").animate({top:0},1000);
+		// 	var current = 0;
+
+		// 	function hanM(){
+		// 	move(current,"0","-100%");
+		// 	current++;
+		// 	if(current==3){
+		// 		current=0
+		// 	}
+		// 	move(current,"100%","0");
+		// 	}
+
+		// 	setInterval(hanM,1000);
+
+		// 	function move(index,start,end){
+
+		// 		$("#wrapper li").eq(index).css("left",start).stop().animate({left:end},1000);
+		// 	};
+		// });
+
+		$(function(){
+			// $("#wrapper li").eq(0).css("z-index",start).animate({"opacity":end},2000);
+			// $("#wrapper li").eq(1).css("z-index",start).animate({"opacity":end},3000);
+			// $("#wrapper li").eq(2).css("z-index",start).animate({"opacity":end},4000);
+			var current = 0;
+			var start = 0;
+
+			function hanM(){
+
+			move(current,"0","0");
+			current++;
+			start++;
+			if(current==3){
+				current=0;
+				start=0
+			}
+			move(current,"1","1");
+			}
+
+			setInterval(hanM,1000);
+
+			function move(index,start,end){
+
+				$("#wrapper li").eq(index).css("z-index",start).stop().animate({"opacity":end},1000);
+			};
+		});
+
+	</script>
+	<style>
+		img{display: block;width: 500px;}
+		#wrapper{margin: 20px auto; width: 500px;height: 208px;}
+		#wrapper ul{
+			width: 500px;height: 208px;_overflow:hidden;position: relative;
+			background-color: skyblue;
+			}
+		#wrapper ul li{position: absolute;top: 0; opacity:0;}
+		#wrapper ul li:first-child{opacity:1;}
+		
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<ul>
+			<li><img src="../../images/pc01.jpg" alt=""></li>
+			<li><img src="../../images/pc02.jpg" alt=""></li>
+			<li><img src="../../images/pc03.jpg" alt=""></li>
+		</ul>
+	</div>
+</body>
+</html>
+</body>
+</html>
