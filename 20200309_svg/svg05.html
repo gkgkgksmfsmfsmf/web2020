@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>svg</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<style type="text/css">
+		body{background-color: orange;}
+		.st0{
+			fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;
+			stroke-dasharray:106;
+			stroke-dashoffset:106;
+			 
+		}
+		
+
+		.svgWrapper.move .st0{animation:lineAni 1s forwards linear; }
+
+		@keyframes lineAni{
+			to{stroke-dashoffset:0 ;}
+		}
+	</style>
+0
+	<script>
+		
+		$(window).scroll(function(){
+			var sTop = $(this).scrollTop();
+			console.log(sTop);
+			if(sTop>500){
+				$(".svgWrapper").addClass("move");
+			}else{
+				$(".svgWrapper").removeClass("move");
+			}
+		});
+
+		
+	</script>
+</head>
+<body>
+	<div style="height: 1000px;"></div>
+	<div class="svgWrapper">
+		<svg  id="Layer_1" x="0px" y="0px"
+		 width="500px" height="500px" viewBox="0 0 100 100">
+			<path class="st0" d="M20.688,5.494c0,0-0.565,28.086,18.46,40.317c0,0,22.083,11.206,11.325,27.174c0,0-13.024,17.554,5.436,18.12"
+				/>
+		</svg>
+	</div>
+</body>
+</html>

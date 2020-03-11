@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>svg04</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<style type="text/css">
+			body{background-color: orange;}
+			.st0{
+				fill:none;
+				stroke:#000000;
+				stroke-width:0.25;
+				stroke-miterlimit:10;
+				stroke-dasharray: 600;
+				stroke-dashoffset: 600; 
+				
+			}
+			@keyframes lineAni{
+				to{stroke-dashoffset:0 }
+			}
+
+			.svgWrapper.move path:nth-child(2){animation-delay: 0.2s}
+			.svgWrapper.move path:nth-child(3){animation-delay: 0.4s}
+			.svgWrapper.move path:nth-child(4){animation-delay: 0.6s}
+			.svgWrapper.move path:nth-child(5){animation-delay: 0.8s}
+			.svgWrapper.move path:nth-child(6){animation-delay: 1.0s}
+			.svgWrapper.move path:nth-child(7){animation-delay: 1.2s}
+			.svgWrapper.move path:nth-child(8){animation-delay: 1.4s}
+			.svgWrapper.move path:nth-child(9){animation-delay: 1.6s}
+			.svgWrapper.move path:nth-child(10){animation-delay: 1.8s}
+
+
+			.svgWrapper.move path{animation:lineAni 1s forwards; }
+		
+	</style>
+	<script>
+		$(window).scroll(function(){
+			var sTop = $(this).scrollTop();
+			if(sTop>500){
+				$(".svgWrapper").addClass("move");
+			}else{
+				$(".svgWrapper").removeClass("move");
+			}
+		});
+	</script>
+</head>
+<body>
+	<div style="height: 1000px;"></div>
+	<div class="svgWrapper">
+		<svg id="Layer_1" x="0px" y="0px"
+	 		width="500px" height="500px" viewBox="0 0 100 100">
+			<path class="st0" d="M20.688,5.494c0,0-0.565,28.086,18.46,40.317c0,0,22.083,11.206,11.325,27.174c0,0-13.024,17.554,5.436,18.12"
+				/>
+			<path class="st0" d="M21.694,5.417c0,0,1.875,28.389,18.183,41.5c0,0,18.648,13.182,10.834,27.477c0,0-10.419,15.704,5.99,16.208"/>
+			<path class="st0" d="M22.701,5.341c0,0,4.316,28.691,17.906,42.684c0,0,15.212,15.158,10.343,27.779c0,0-7.814,13.854,6.544,14.296"
+				/>
+			<path class="st0" d="M23.707,5.266c0,0,6.758,28.992,17.63,43.866c0,0,11.777,17.134,9.853,28.082c0,0-5.21,12.005,7.097,12.383"/>
+			<path class="st0" d="M24.714,5.189c0,0,9.199,29.295,17.353,45.049c0,0,8.343,19.11,9.361,28.385c0,0-2.604,10.154,7.651,10.469"/>
+			<path class="st0" d="M25.721,5.114c0,0,11.64,29.596,17.076,46.232c0,0,4.907,21.086,8.871,28.687c0,0,0,8.306,8.204,8.558"/>
+			<path class="st0" d="M26.728,5.038c0,0,14.081,29.898,16.799,47.414c0,0,1.472,23.063,8.38,28.989c0,0,2.605,6.455,8.759,6.645"/>
+			<path class="st0" d="M27.734,4.962c0,0,16.522,30.2,16.522,48.597c0,0-1.964,25.039,7.889,29.292c0,0,5.21,4.606,9.312,4.732"/>
+			<path class="st0" d="M28.741,4.886c0,0,18.963,30.502,16.245,49.78c0,0-5.398,27.015,7.399,29.595c0,0,7.814,2.756,9.865,2.818"/>
+			<path class="st0" d="M29.748,4.81c0,0,21.405,30.805,15.968,50.963c0,0-8.834,28.991,6.908,29.897l10.419,0.906"/>
+		</svg>
+	</div>
+</body>
+</html>
