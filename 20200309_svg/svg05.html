@@ -8,37 +8,42 @@
 	<style type="text/css">
 		body{background-color: orange;}
 		.st0{
-			fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;
+			fill:none;
+			stroke:#000000;
+			stroke-width:0.25;
+			stroke-miterlimit:106;
 			stroke-dasharray:106;
 			stroke-dashoffset:106;
-			 
+			stroke-linecap: round;
 		}
-		
-
-		.svgWrapper.move .st0{animation:lineAni 1s forwards linear; }
 
 		@keyframes lineAni{
 			to{stroke-dashoffset:0 ;}
 		}
 	</style>
-0
-	<script>
-		
-		$(window).scroll(function(){
-			var sTop = $(this).scrollTop();
-			console.log(sTop);
-			if(sTop>500){
-				$(".svgWrapper").addClass("move");
-			}else{
-				$(".svgWrapper").removeClass("move");
-			}
-		});
 
-		
+	<script>
+		$(function(){
+			var path = $(".svgWrapper path").get(0);
+			var total_length = path.getTotalLength();  //javascript 메소드
+			// console.log(total_length);
+			$(window).scroll(function(){
+				var scrollTop = $(this).scrollTop();
+				var sScroll = 200;
+				var eScroll = 600;
+				var x;
+				x = ( (scrollTop-sScroll)*(0-total_length)/(eScroll-sScroll) ) + total_length;
+				console.log("s:"+scrollTop+", x:"+x);  	
+				if(x>total_length){x=total_length};
+				if(x<0){x=0};	
+				$(".st0").css("stroke-dashoffset",x);		
+			});
+		});
 	</script>
+
 </head>
 <body>
-	<div style="height: 1000px;"></div>
+	<div style="height: 500px;"></div>
 	<div class="svgWrapper">
 		<svg  id="Layer_1" x="0px" y="0px"
 		 width="500px" height="500px" viewBox="0 0 100 100">
@@ -46,5 +51,6 @@
 				/>
 		</svg>
 	</div>
+	<div style="height: 800px;"></div>
 </body>
 </html>
