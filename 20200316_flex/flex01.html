@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>flex01</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		html,body{height: 100%;}
+		.wrap{
+			background-color: skyblue;
+			/*height: 100%;*/
+			/*width: 500px;
+			height: 500px;*/
+			width: 100vw; /*50%와 같음*/ /*화면을 줄여도 50씩*/
+			height: 100vh;/*50%와 같음*/
+			font-size: 10vh;
+			display: flex;
+			/*justify-content: center;*/ /*부모*/
+			/*align-items: center;*/ /*자식*/
+		}
+		.wrap div{background-color: orange;}
+		.txt{
+			/*margin-left: auto;
+			margin-right: auto;
+			margin-top: auto;
+			margin-bottom: auto;*/
+			margin:auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="txt">haneul</div>
+	</div>
+</body>
+</html>
