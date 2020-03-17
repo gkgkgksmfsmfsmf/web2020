@@ -41,17 +41,20 @@
 	<script>
 		$(function(){
 			var mT = $(".move1st").offset().top;
+			// var wT = $(window).scrollTop();
 			$(window).scroll(function(){
-			var wT = $(this).scrollTop();	
-			if(mT-200<wT){
-				$(".move1st").addClass("animate");
-				}else{
-					$(".move1st").removeClass("animate");
+				var wT = $(this).scrollTop();	
+				if(mT-200<wT){
+					$(".move1st").addClass("animate");
+					}else{
+						$(".move1st").removeClass("animate");
+					}
+				if(wT>300){
+					$(".menu-top").addClass("fixed-top");
 				}
-			});
-			if(wT==600){
-				$(".bg-dark").addClass("fixed-top");
-			}
+
+				});
+				
 		});
 		
 	</script>
@@ -59,7 +62,7 @@
 </head>		
 <body>
 
-	<div class="bg-dark">
+	<div class="bg-dark menu-top">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
 				  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -137,6 +140,6 @@
 		</div>
 	</div>
 
-<div style="height: 800px;"></div>
+<div style="height: 1000px;"></div>
 </body>
 </html>
