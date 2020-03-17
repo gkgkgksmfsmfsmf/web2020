@@ -8,7 +8,7 @@
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<style>
-		.bg-img1{background-image: url(images/bg.png);}
+		.bg-img1{background-image: url(images/bg.png);height: 500px;}
 		/*height*/
 		.h-300{height: 300px;}
 
@@ -18,26 +18,47 @@
 		.st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 		.st1{fill:#F0F2F5;stroke:#323233;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 
-		.move1st{position: relative;}
+		.move1st{position: relative;height: 300px;}
 		.note{
-			width: 300px;
+			width: 200px;
 			position: absolute;
 			_left: 50%;transform: translateX(-50%);
-			animation: mAni1st 1s forwards;
+			opacity: 0;
+			
 		}
 		
 		@keyframes mAni1st{
-			from{left: 0;}
-			to{left: 50%;}
+			from{opacity:0;left: 0;}
+			to{opacity:1;left: 50%;}
 		}
+
+		.move1st.animate .note{
+			animation: mAni1st 1s forwards;
+		}
+		
 	</style>
 
 	<script>
+		$(function(){
+			var mT = $(".move1st").offset().top;
+			$(window).scroll(function(){
+			var wT = $(this).scrollTop();	
+			if(mT-200<wT){
+				$(".move1st").addClass("animate");
+				}else{
+					$(".move1st").removeClass("animate");
+				}
+			});
+			if(wT==600){
+				$(".bg-dark").addClass("fixed-top");
+			}
+		});
 		
 	</script>
 	
 </head>		
 <body>
+
 	<div class="bg-dark">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -66,13 +87,13 @@
 	</div>
 
 
-	<div class="jumbotron jumbotron-fluid bg-img1 text-white">
-		  <div class="container">
-		    <h1 class="display-3">Fluid jumbotron</h1>
-		    <p class="lead">This is a modified jumbotron that occupies
+	<div class="jumbotron jumbotron-fluid bg-img1 text-white d-flex align-items-center">
+		  <div class="container d-flex flex-column align-items-center bg-primary">
+		    <h1>Fluid jumbotron</h1>
+		    <p class="d-none d-md-block">This is a modified jumbotron that occupies
 		                    the entire horizontal space of its parent.</p>
 		  </div>
-	</div>
+		</div>
 
 	<div>
 		<div class="container">
@@ -116,6 +137,6 @@
 		</div>
 	</div>
 
-
+<div style="height: 800px;"></div>
 </body>
 </html>
