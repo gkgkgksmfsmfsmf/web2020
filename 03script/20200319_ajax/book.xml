@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+	<book>
+		<title>나답게 살고 있습니다</title>
+		<author>마스다 미리</author>
+		<bookimg>01.jpg</bookimg>
+		<price>20,000</price>
+	</book>
+	<book>
+		<title>수학이 필요한 순간</title>
+		<author>김민형</author>
+		<bookimg>02.jpg</bookimg>
+		<price>20,000</price>
+	</book>
+	<book>
+		<title>작가들의 비밀스런 삶</title>
+		<author>기욤뮈소</author>
+		<bookimg>03.jpg</bookimg>
+		<price>20,000</price>
+	</book>
+</books>

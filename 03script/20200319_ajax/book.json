@@ -1,0 +1,22 @@
+{
+	"book":[
+		{
+			"title":"나답게 살고 있습니다.",
+			"author":"마스다 미리",
+			"bookimg":"01.jpg,",
+			"price":"20,000"
+		},
+		{
+			"title":"수학이 필요한 순간",
+			"author":"김민형",
+			"bookimg":"02.jpg,",
+			"price":"20,000"
+		},
+		{
+			"title":"작가들의 비밀스런 삶",
+			"author":"기욤뮈소",
+			"bookimg":"03.jpg,",
+			"price":"20,000"
+		}
+	]
+}

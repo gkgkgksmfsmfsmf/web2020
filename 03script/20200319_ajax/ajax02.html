@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>ajax</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style>
+			</style>
+	<script>
+		$(function(){
+			$.ajax({
+				url:"book.xml",
+				dataType:"xml",
+				success:function(data){
+					// $(data).find("book").each(function(){});
+					$(data).find("book").each(function(){
+						var title = $("title",this).text();
+						var author = $("author",this).text();
+						var price = $("price",this).text();
+						var img = $("bookimg",this).text();
+						
+						$(".han").append(txt);
+					});
+				}
+			}); //ajax의 end
+		}); //$의 end
+	</script>
+</head>
+<body>
+	<div class="Wrap">
+		<ul class="han"></ul>
+	</div>
+</body>
+</html>
