@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>::오늘의 날씨::</title>
+   <style>
+      /*reset*/
+      *{margin: 0;padding: 0;box-sizing: border-box;}
+      li{list-style: none;}
+      a:visited,a:link{text-decoration: none;color: black;}
+      .clearfix:after{content: "";display: block;clear: both;}
+   </style>
+   
+</head>
+<body>
+   <style>
+      #weather_info{
+         width: 300px; height: 200px; margin: auto;
+         
+         position: relative;
+         text-align: center; 
+      }
+      #weather_info li{
+         background-color: skyblue; border-radius: 10px;padding-top: 10px; padding-bottom: 10px;
+         margin-bottom: 10px;box-shadow: 5px 5px 8px #888;
+      }
+      h1{text-align: center;}
+      .temp{font-size: 2em;}
+   </style>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <div id="weather_info">
+      <ul>
+         
+      </ul>
+   </div>
+   
+   <script>
+      
+      var locCity =["seoul","busan","inchon","jeju"];
+      for(var i=0;i<locCity.length;i++){
+         console.log(locCity[i]);
+         var url = 'http://api.openweathermap.org/data/2.5/weather?q='+locCity[i]+'&APPID=60bd2d7c211eb277cd1af777184c8ff7';
+         view();
+      }
+
+      function view(){
+      $.getJSON(url,function(data){ 
+         // 인자로 받아서 data라는 매개변수에 값을 뿌림
+         
+         // 날씨 데이터 객체
+         var sys = data.sys;          // 국가명, 일출/일몰         
+         var city = data.name;          // 도시명
+    
+         var weather = data.weather;    // 날씨 객체
+         var wmain = weather[0].main;    // 구름 상태(Cloudiness)
+         var w_id = weather[0].id;       // 날씨상태 id 코드
+         var icon = weather[0].icon;      // 날씨 아이콘 정보
+         
+         var country = sys.country;     // 국가명
+         
+         var main = data.main;           // 온도 기압 관련 객체
+         var temp = main.temp;          // 현재 온도
+         var temp_min = main.temp_min    // 최저 온도
+         var temp_max = main.temp_max    // 최고 온도
+         
+         
+         // 날씨 아이콘
+         var icon_url = 'images/'+ icon+'.svg';
+         var data = "";
+         data += "<li>";
+         data += "<h1 class='city'>"+city+"</h1>"
+         data += "<div class='icon'><img src='"+icon_url+"'></div>"
+         data += "<div class='temp'>"+parseInt(temp-273.15)+" &deg; </div>"
+         data += "</li>"
+         
+         $("#weather_info>ul").append(data);
+
+
+      });
+}
+
+   </script>
+</body>
+</html>
