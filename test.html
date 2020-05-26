@@ -5,10 +5,33 @@
 	<meta charset="UTF-8">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<title>문서 제목</title>
+	<!-- <script>
+		$(function(){
+			var deg = [15,20,25,30,40];
+			function average(){
+				var sum = 0;
+				var n = deg.length;
+				for(var i=0;i<n;i++){
+					sum = sum + deg[i];
+				}
+				return(sum/n);
+			}
+			// document.write(average);
+			var aver=average();
+			document.write(aver);
+		});
+	</script> -->
 	<script>
 		$(function(){
-			alert("안녕하세요!"+"\n"+"\t"+"저는 '한성용'입니다.");
-			document.write("하늘");
+			var a = 1;
+			function showNum(){
+				var a;
+				a = 2
+				document.write(a);
+			}
+			
+			showNum();
+			document.write(a);
 		});
 	</script>
 </head>
